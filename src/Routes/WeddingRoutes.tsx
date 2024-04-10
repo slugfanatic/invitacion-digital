@@ -10,15 +10,15 @@ const WeddingPageClasic = lazy(
 export const WeddingRoutes: React.FC = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/invitacion-digital/",
       element: <Wedding />,
     },
     {
-      path: "/wedding",
+      path: "/invitacion-digital/wedding",
       element: <WeddingPage />,
     },
     {
-      path: "/clasic",
+      path: "/invitacion-digital/clasic",
       element: <WeddingPageClasic />,
     },
   ]);

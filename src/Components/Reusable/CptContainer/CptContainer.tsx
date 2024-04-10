@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Theme } from "@mui/material";
 import ICptContainer from "../../../Interfaces/Components/ICptContainer";
+import image from "../../../assets/images/slide-1.jpg";
 
 const CptContainer: React.FC<ICptContainer> = ({
   children,
@@ -19,7 +20,7 @@ const CptContainer: React.FC<ICptContainer> = ({
       backgroundColor: (theme: Theme) => theme.palette.secondary.main,
     },
     picture: {
-      backgroundImage: `url("https://angyyjulio.com/assets/img/slider/slide-1.jpg")`,
+      backgroundImage: `url(${image})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "top center",
@@ -28,6 +29,7 @@ const CptContainer: React.FC<ICptContainer> = ({
 
   return (
     <Box
+      className="test"
       sx={{
         margin: marginValues[type],
         ...(background && backgroundValues[background]),
