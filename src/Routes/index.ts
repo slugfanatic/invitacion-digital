@@ -1,0 +1,1 @@
+export { WeddingRoutes } from "./WeddingRoutes";

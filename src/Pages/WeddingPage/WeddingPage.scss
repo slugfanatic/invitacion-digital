@@ -1,0 +1,187 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span {
+  &.shadowText {
+    text-shadow: 0px 0px 6px #000;
+  }
+}
+
+.mainBackground {
+  background-image: url("https://angyyjulio.com/assets/img/slider/slide-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  .mainContent {
+    min-height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.messageBackground {
+  background-image: url("https://angyyjulio.com/assets/img/historia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  .messageContent {
+    min-height: 100vh;
+    padding: 10%;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: flex-end;
+    background-color: rgb(239 107 147 / 70%);
+  }
+}
+
+.saveTheDateBackground {
+  background-image: url("https://angyyjulio.com/assets/img/save.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  .saveTheDateContent {
+    min-height: 50vh;
+    padding: 10%;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .timer {
+    border-radius: 4000px;
+    width: 160px;
+    min-height: 160px;
+    margin: 0 20px;
+    padding: 50px 10px 40px 10px;
+    &.seconds,
+    &.hours {
+      background: rgb(247 200 28 / 60%);
+    }
+    &.minutes,
+    &.days {
+      background: rgb(192 44 127 / 60%);
+    }
+  }
+}
+
+.placeBackground {
+  background-color: #587a2e;
+
+  .placeContent {
+    min-height: 50vh;
+    padding: 5% 10% 5% 10%;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.calendarBackground {
+  background-color: #fbb5e5;
+
+  .calendarContent {
+    min-height: 50vh;
+    padding: 5% 10% 5% 10%;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.dressCodeBackground {
+  background-color: #fcfcfc;
+
+  .dressCodeContent {
+    min-height: 50vh;
+    padding: 5% 10% 5% 10%;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: flex-end;
+
+    .titles {
+      padding: 8px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      height: 50vh; /* Altura de 50% de la ventana */
+
+      &.green {
+        border: 2px solid #00ff00; /* Borde verde */
+      }
+      &.pink {
+        border: 2px solid #ff69b4; /* Borde rosa */
+      }
+
+      span {
+        height: 100%; /* Ocupa toda la altura del contenedor */
+        writing-mode: vertical-lr; /* Texto vertical de izquierda a derecha */
+        text-orientation: upright; /* Orientación vertical */
+        white-space: nowrap; /* Evita el desbordamiento de texto */
+        font-weight: bold;
+      }
+    }
+
+    .box {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      &.men {
+        background-image: url("https://angyyjulio.com/assets/img/dress-code/codigo-hombre-sin corbata.png");
+      }
+      &.women {
+        background-image: url("https://angyyjulio.com/assets/img/dress-code/codigo-mujer-vestido-corto.png");
+      }
+    }
+  }
+}
+
+.suggestionBackground {
+  background-color: #364e8e;
+
+  .suggestionContent {
+    min-height: 50vh;
+    padding: 5% 10% 5% 10%;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.itineraryBackground {
+  background-color: white;
+
+  .itineraryContent {
+    min-height: 50vh;
+    padding: 5% 10% 5% 10%;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: flex-end;
+  }
+}

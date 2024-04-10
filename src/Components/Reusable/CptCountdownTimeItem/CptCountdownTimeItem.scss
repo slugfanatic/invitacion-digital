@@ -1,0 +1,12 @@
+.countdown-time-item {
+  height: 160px;
+  padding: 40px 0px 0px 0px;
+  aspect-ratio: 1;
+
+  &.timer-circle {
+    border-radius: 100px;
+  }
+  &.timer-square {
+    border-radius: 0px;
+  }
+}
