@@ -14,7 +14,7 @@ const PPCelebrantsLongMessage: React.FC = () => {
         </CptPadding>
       </Grid2>
       <Grid2 xs={2} sm={2} md={2}>
-        <CptContainer background="picture" type="full">
+        <CptContainer background="pictureV" type="full">
           <CptSpacer height={elementHeight} />
         </CptContainer>
       </Grid2>

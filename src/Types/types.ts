@@ -6,7 +6,11 @@ export type AlignType =
   | "justify"
   | undefined;
 
-export type BackgroundFillType = "color" | "alternative" | "picture";
+export type BackgroundFillType =
+  | "color"
+  | "alternative"
+  | "pictureH"
+  | "pictureV";
 
 export type ColorType =
   | "inherit"
@@ -26,4 +30,16 @@ export type ThemeType = "Clasic" | "Green" | "Pink" | "White";
 export type ThemeContextType = {
   currentTheme: ThemeType;
   changeTheme: (theme: ThemeType) => void;
+};
+
+export type CelebrationType = "Nos Casamos" | "Mis Tres Años";
+
+export type CelebrationInformationType = {
+  celebrantsName: string;
+  celebrationType: CelebrationType;
+};
+
+export type CelebrationContextType = {
+  currentCelebrant: CelebrationInformationType;
+  updateCelebration: (theme: CelebrationInformationType) => void;
 };

@@ -17,7 +17,6 @@ export const ThemeContextProvider: React.FC<IThemeContextProvider> = ({
     setCurrentTheme(theme);
   };
 
-  console.log(currentTheme);
   return (
     <ThemeContext.Provider value={{ currentTheme, changeTheme }}>
       <ThemeProvider theme={ThemesRecord[currentTheme]}>

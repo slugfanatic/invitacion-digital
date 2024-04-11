@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Theme } from "@mui/material";
 import ICptContainer from "../../../Interfaces/Components/ICptContainer";
 import image from "../../../assets/images/slide-1.jpg";
+import horizontal from "../../../assets/images/Horizontal.jpeg";
+import vertical from "../../../assets/images/Vertical.jpeg";
 
 const CptContainer: React.FC<ICptContainer> = ({
   children,
@@ -19,11 +21,17 @@ const CptContainer: React.FC<ICptContainer> = ({
     alternative: {
       backgroundColor: (theme: Theme) => theme.palette.secondary.main,
     },
-    picture: {
-      backgroundImage: `url(${image})`,
+    pictureH: {
+      backgroundImage: `url(${horizontal})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "top center",
+      backgroundPosition: "center center",
+    },
+    pictureV: {
+      backgroundImage: `url(${vertical})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center center",
     },
   };
 
