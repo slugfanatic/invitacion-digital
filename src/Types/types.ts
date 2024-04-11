@@ -39,6 +39,7 @@ export type CelebrationInformationType = {
   celebrationType: CelebrationType;
   invitationMessage: string;
   longMessage: string;
+  celebrationDate: Date;
 };
 
 export type CelebrationContextType = {

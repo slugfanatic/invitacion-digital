@@ -28,6 +28,7 @@ export const CelebrationContextProvider: React.FC<IThemeContextProvider> = ({
         "Así que prepárate, mi pequeña aventurera, porque te espera una fiesta que quedará grabada en tu memoria para siempre. Estamos emocionados de compartir este día contigo y de crear recuerdos que perdurarán a lo largo del tiempo.<br />" +
         "Con todo nuestro amor,<br />" +
         "Tus Papas",
+      celebrationDate: new Date("2024-06-08 13:30:00"),
     });
 
   const updateCelebration = (celebrationInfo: CelebrationInformationType) => {

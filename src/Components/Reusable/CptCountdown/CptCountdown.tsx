@@ -1,4 +1,5 @@
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import { useCelebrationContext } from "../../../Context/CelebrationContext";
 import CptCountdownTimeItem from "../CptCountdownTimeItem/CptCountdownTimeItem";
 import { LblWelcome } from "../../Labels";
 import ICptCountdown from "../../../Interfaces/Components/ICptCountdown";
@@ -9,9 +10,11 @@ const CptCountdown: React.FC<ICptCountdown> = ({
   color,
   glass,
 }): JSX.Element => {
-  const { days, hours, minutes, seconds } = useCountdown(
-    new Date("2024-06-08 13:30:00")
-  );
+  const {
+    currentCelebrant: { celebrationDate },
+  } = useCelebrationContext();
+
+  const { days, hours, minutes, seconds } = useCountdown(celebrationDate);
 
   let countdownUnits = [
     { value: days, label: "Days" },
