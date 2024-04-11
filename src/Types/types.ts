@@ -37,6 +37,8 @@ export type CelebrationType = "Nos Casamos" | "Mis Tres Años";
 export type CelebrationInformationType = {
   celebrantsName: string;
   celebrationType: CelebrationType;
+  invitationMessage: string;
+  longMessage: string;
 };
 
 export type CelebrationContextType = {
