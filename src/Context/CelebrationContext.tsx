@@ -29,6 +29,8 @@ export const CelebrationContextProvider: React.FC<IContextProvider> = ({
         "Con todo nuestro amor,<br />" +
         "Tus Papas",
       celebrationDate: new Date("2024-06-08 13:30:00"),
+      imageV: require("../assets/images/Vertical.jpeg"),
+      imageH: require("../assets/images/Horizontal.jpeg"),
     });
 
   const updateCelebration = (celebrationInfo: CelebrationInformationType) => {

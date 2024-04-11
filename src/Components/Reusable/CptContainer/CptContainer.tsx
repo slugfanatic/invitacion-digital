@@ -1,15 +1,17 @@
 import React from "react";
 import { Box, Theme } from "@mui/material";
 import ICptContainer from "../../../Interfaces/Components/ICptContainer";
-import image from "../../../assets/images/slide-1.jpg";
-import horizontal from "../../../assets/images/Horizontal.jpeg";
-import vertical from "../../../assets/images/Vertical.jpeg";
+import { useCelebrationContext } from "../../../Context/CelebrationContext";
 
 const CptContainer: React.FC<ICptContainer> = ({
   children,
   type,
   background,
 }) => {
+  const {
+    currentCelebrant: { imageH, imageV },
+  } = useCelebrationContext();
+
   const marginValues = {
     full: "0%",
     margin: "1%",
@@ -22,13 +24,13 @@ const CptContainer: React.FC<ICptContainer> = ({
       backgroundColor: (theme: Theme) => theme.palette.secondary.main,
     },
     pictureH: {
-      backgroundImage: `url(${horizontal})`,
+      backgroundImage: `url(${imageH})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center",
     },
     pictureV: {
-      backgroundImage: `url(${vertical})`,
+      backgroundImage: `url(${imageV})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center",
