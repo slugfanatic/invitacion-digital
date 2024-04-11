@@ -3,13 +3,13 @@ import {
   CelebrationContextType,
   CelebrationInformationType,
 } from "../Types/types";
-import IThemeContextProvider from "../Interfaces/Themes/IThemeContextProvider";
+import IContextProvider from "../Interfaces/Themes/IContextProvider";
 
 const CelebrationContext = createContext<CelebrationContextType | null>(null);
 export const useCelebrationContext = () =>
   useContext(CelebrationContext) as CelebrationContextType;
 
-export const CelebrationContextProvider: React.FC<IThemeContextProvider> = ({
+export const CelebrationContextProvider: React.FC<IContextProvider> = ({
   children,
 }) => {
   const [currentCelebrant, setCurrentCelebrant] =

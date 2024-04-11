@@ -2,13 +2,13 @@ import { createContext, useContext, useState } from "react";
 import { ThemeProvider } from "@mui/material";
 import { ThemeContextType, ThemeType } from "../Types/types";
 import { ThemesRecord } from "../Themes/ThemesRecord";
-import IThemeContextProvider from "../Interfaces/Themes/IThemeContextProvider";
+import IContextProvider from "../Interfaces/Themes/IContextProvider";
 
 const ThemeContext = createContext<ThemeContextType | null>(null);
 export const useThemeContext = () =>
   useContext(ThemeContext) as ThemeContextType;
 
-export const ThemeContextProvider: React.FC<IThemeContextProvider> = ({
+export const ThemeContextProvider: React.FC<IContextProvider> = ({
   children,
 }) => {
   const [currentTheme, setCurrentTheme] = useState<ThemeType>("Clasic");
