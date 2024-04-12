@@ -4,7 +4,7 @@ import { LblLongMessage } from "../../Labels";
 import useElementHeight from "../../../Hooks/useElementHeight";
 
 const PPCelebrantsLongMessage: React.FC = () => {
-  const { elementHeight, elementRef } = useElementHeight();
+  const { elementRef, elementHeight } = useElementHeight();
 
   return (
     <Grid2 container columns={{ xs: 2, sm: 2, md: 4, lg: 4, xl: 4 }}>
