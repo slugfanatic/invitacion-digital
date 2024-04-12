@@ -32,7 +32,7 @@ export type ThemeContextType = {
   changeTheme: (theme: ThemeType) => void;
 };
 
-export type CelebrationType = "Nos Casamos" | "Mis Tres Años";
+export type CelebrationType = "¡Nos Casamos!" | "Mis Tres Años";
 
 export type CelebrationInformationType = {
   celebrantsName: string;

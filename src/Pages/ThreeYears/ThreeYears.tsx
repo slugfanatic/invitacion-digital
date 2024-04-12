@@ -11,19 +11,10 @@ import {
   PPVerticalTimeLine,
 } from "../../Components/PageParts";
 import { LblCelebrantsInvitationMessage } from "../../Components/Labels";
-import { useThemeContext } from "../../Context/ThemeContext";
 
 const Wedding: React.FC = () => {
-  const { changeTheme } = useThemeContext();
   return (
     <CptWrapper>
-      <div>
-        {/* Cada botón cambia el tema cuando se hace clic */}
-        <button onClick={() => changeTheme("Clasic")}>Clasic</button>
-        <button onClick={() => changeTheme("Green")}>Green</button>
-        <button onClick={() => changeTheme("Pink")}>Pink</button>
-        <button onClick={() => changeTheme("White")}>White</button>
-      </div>
       <CptContainer type="full" background="pictureH">
         <CptTranslucentLayer color="secondary" glass="lower">
           <PPCelebrantsPresentation />
