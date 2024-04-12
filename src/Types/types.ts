@@ -25,7 +25,7 @@ export type ColorType =
 
 export type ContainerType = "full" | "margin" | "card";
 
-export type ThemeType = "Clasic" | "Green" | "Pink" | "White";
+export type ThemeType = "Classic" | "Green" | "Pink" | "White";
 
 export type ThemeContextType = {
   currentTheme: ThemeType;

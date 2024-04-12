@@ -8,7 +8,7 @@ import {
 } from "./Pages/AlexBrush";
 
 export const ThemesRecord: Record<ThemeType, Theme> = {
-  Clasic: AlexBrushClasic,
+  Classic: AlexBrushClasic,
   Green: AlexBrushGreen,
   Pink: AlexBrushPink,
   White: AlexBrushWhite,

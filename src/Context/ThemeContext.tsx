@@ -11,7 +11,7 @@ export const useThemeContext = () =>
 export const ThemeContextProvider: React.FC<IContextProvider> = ({
   children,
 }) => {
-  const [currentTheme, setCurrentTheme] = useState<ThemeType>("Clasic");
+  const [currentTheme, setCurrentTheme] = useState<ThemeType>("Classic");
 
   const changeTheme = (theme: ThemeType) => {
     setCurrentTheme(theme);

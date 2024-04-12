@@ -28,7 +28,7 @@ export const CelebrationContextProvider: React.FC<IContextProvider> = ({
         "Así que prepárate, mi pequeña aventurera, porque te espera una fiesta que quedará grabada en tu memoria para siempre. Estamos emocionados de compartir este día contigo y de crear recuerdos que perdurarán a lo largo del tiempo.<br />" +
         "Con todo nuestro amor,<br />" +
         "Tus Papas",
-      celebrationDate: new Date("2024-06-08 13:30:00"),
+      celebrationDate: new Date("2024-05-30 13:30:00"),
       imageV: require("../assets/images/Vertical.jpeg"),
       imageH: require("../assets/images/Horizontal.jpeg"),
     });

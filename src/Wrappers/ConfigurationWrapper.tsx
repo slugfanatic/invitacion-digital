@@ -49,7 +49,7 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
   return (
     <>
       <div>
-        <button onClick={() => changeTheme("Clasic")}>Clasic</button>
+        <button onClick={() => changeTheme("Classic")}>Classic</button>
         <button onClick={() => changeTheme("Green")}>Green</button>
         <button onClick={() => changeTheme("Pink")}>Pink</button>
         <button onClick={() => changeTheme("White")}>White</button>
