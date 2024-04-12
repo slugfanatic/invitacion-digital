@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/invitacion-digital/static/css/main.2b9f15dd.css",
-    "main.js": "/invitacion-digital/static/js/main.37bff36a.js",
+    "main.js": "/invitacion-digital/static/js/main.11316f2b.js",
     "static/css/496.56a89e71.chunk.css": "/invitacion-digital/static/css/496.56a89e71.chunk.css",
-    "static/js/496.d11e60ac.chunk.js": "/invitacion-digital/static/js/496.d11e60ac.chunk.js",
+    "static/js/496.75e15997.chunk.js": "/invitacion-digital/static/js/496.75e15997.chunk.js",
     "static/css/698.56a89e71.chunk.css": "/invitacion-digital/static/css/698.56a89e71.chunk.css",
-    "static/js/698.9752c63e.chunk.js": "/invitacion-digital/static/js/698.9752c63e.chunk.js",
+    "static/js/698.9c852f8f.chunk.js": "/invitacion-digital/static/js/698.9c852f8f.chunk.js",
     "static/css/668.bcdf72d0.chunk.css": "/invitacion-digital/static/css/668.bcdf72d0.chunk.css",
-    "static/js/668.882ee61e.chunk.js": "/invitacion-digital/static/js/668.882ee61e.chunk.js",
+    "static/js/668.85d40239.chunk.js": "/invitacion-digital/static/js/668.85d40239.chunk.js",
     "static/css/439.2534e9a1.chunk.css": "/invitacion-digital/static/css/439.2534e9a1.chunk.css",
-    "static/js/439.30857d21.chunk.js": "/invitacion-digital/static/js/439.30857d21.chunk.js",
+    "static/js/439.56e43316.chunk.js": "/invitacion-digital/static/js/439.56e43316.chunk.js",
     "static/js/453.1e2eb5f2.chunk.js": "/invitacion-digital/static/js/453.1e2eb5f2.chunk.js",
     "static/js/556.a088ce86.chunk.js": "/invitacion-digital/static/js/556.a088ce86.chunk.js",
     "static/js/163.9943f2c9.chunk.js": "/invitacion-digital/static/js/163.9943f2c9.chunk.js",
     "static/media/Horizontal.jpeg": "/invitacion-digital/static/media/Horizontal.52ff392fc8724c2ad13d.jpeg",
+    "static/media/slide-1.jpg": "/invitacion-digital/static/media/slide-1.27f0c1911d8990c2b713.jpg",
     "static/media/Vertical.jpeg": "/invitacion-digital/static/media/Vertical.9a4d3fcbdf5fb87677df.jpeg",
     "static/media/Montserrat-Italic.otf": "/invitacion-digital/static/media/Montserrat-Italic.60eb9784a7c1c45b3791.otf",
     "static/media/Montserrat-Regular.otf": "/invitacion-digital/static/media/Montserrat-Regular.65bc44fbf8204991497c.otf",
@@ -33,21 +34,21 @@
     "static/media/Sofia-Regular.otf": "/invitacion-digital/static/media/Sofia-Regular.e2dee251fd62f4f4bc0b.otf",
     "index.html": "/invitacion-digital/index.html",
     "main.2b9f15dd.css.map": "/invitacion-digital/static/css/main.2b9f15dd.css.map",
-    "main.37bff36a.js.map": "/invitacion-digital/static/js/main.37bff36a.js.map",
+    "main.11316f2b.js.map": "/invitacion-digital/static/js/main.11316f2b.js.map",
     "496.56a89e71.chunk.css.map": "/invitacion-digital/static/css/496.56a89e71.chunk.css.map",
-    "496.d11e60ac.chunk.js.map": "/invitacion-digital/static/js/496.d11e60ac.chunk.js.map",
+    "496.75e15997.chunk.js.map": "/invitacion-digital/static/js/496.75e15997.chunk.js.map",
     "698.56a89e71.chunk.css.map": "/invitacion-digital/static/css/698.56a89e71.chunk.css.map",
-    "698.9752c63e.chunk.js.map": "/invitacion-digital/static/js/698.9752c63e.chunk.js.map",
+    "698.9c852f8f.chunk.js.map": "/invitacion-digital/static/js/698.9c852f8f.chunk.js.map",
     "668.bcdf72d0.chunk.css.map": "/invitacion-digital/static/css/668.bcdf72d0.chunk.css.map",
-    "668.882ee61e.chunk.js.map": "/invitacion-digital/static/js/668.882ee61e.chunk.js.map",
+    "668.85d40239.chunk.js.map": "/invitacion-digital/static/js/668.85d40239.chunk.js.map",
     "439.2534e9a1.chunk.css.map": "/invitacion-digital/static/css/439.2534e9a1.chunk.css.map",
-    "439.30857d21.chunk.js.map": "/invitacion-digital/static/js/439.30857d21.chunk.js.map",
+    "439.56e43316.chunk.js.map": "/invitacion-digital/static/js/439.56e43316.chunk.js.map",
     "453.1e2eb5f2.chunk.js.map": "/invitacion-digital/static/js/453.1e2eb5f2.chunk.js.map",
     "556.a088ce86.chunk.js.map": "/invitacion-digital/static/js/556.a088ce86.chunk.js.map",
     "163.9943f2c9.chunk.js.map": "/invitacion-digital/static/js/163.9943f2c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b9f15dd.css",
-    "static/js/main.37bff36a.js"
+    "static/js/main.11316f2b.js"
   ]
 }
