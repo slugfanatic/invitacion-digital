@@ -7,9 +7,12 @@ import ColorWhiteSand from "./Shared/ColorWhiteSand";
 import TypographyColorWhite from "./Shared/TypographyColorWhite";
 import TypographyColorBlack from "./Shared/TypographyColorBlack";
 
+import FontAlexBrush from "./Shared/FontAlexBrush";
+import FontAllura from "./Shared/FontAllura";
+import FontMiama from "./Shared/FontMiama";
+
 import PaletteTextChanges from "../Utils/PaletteTextChanges";
 import PaletteChanges from "../Utils/PaletteChanges";
-import FontAlexBrush from "./Shared/FontAlexBrush";
 
 const colors = [
   { name: "RedBlue", theme: ColorRedBlue },
@@ -23,7 +26,11 @@ const typographyStyles = [
   { name: "Black", theme: TypographyColorBlack },
 ];
 
-const fonts = [{ name: "Alex", theme: FontAlexBrush }];
+const fonts = [
+  { name: "Alex", theme: FontAlexBrush },
+  { name: "Allura", theme: FontAllura },
+  { name: "Miama", theme: FontMiama },
+];
 
 const ThemesRecord: Record<string, Theme> = {};
 
