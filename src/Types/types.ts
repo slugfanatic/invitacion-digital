@@ -1,3 +1,4 @@
+import { Theme } from "@mui/material";
 import ITimeLineEvent from "../Interfaces/Components/ITimeLineEvent";
 
 export type AlignType =
@@ -30,6 +31,7 @@ export type ContainerType = "full" | "margin" | "card";
 export type ThemeContextType = {
   currentTheme: string;
   changeTheme: (theme: string) => void;
+  themeNames: string[];
 };
 
 export type CelebrationType = "¡Nos Casamos!" | "Mis Tres Años";

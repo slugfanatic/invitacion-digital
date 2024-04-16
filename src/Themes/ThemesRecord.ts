@@ -12,24 +12,28 @@ import PaletteChanges from "../Utils/PaletteChanges";
 import FontAlexBrush from "./Shared/FontAlexBrush";
 
 const colors = [
-  { name: "RedBlue", color: ColorRedBlue },
-  { name: "Green", color: ColorGreenForest },
-  { name: "Pink", color: ColorPink },
-  { name: "White", color: ColorWhiteSand },
+  { name: "RedBlue", theme: ColorRedBlue },
+  { name: "Green", theme: ColorGreenForest },
+  { name: "Pink", theme: ColorPink },
+  { name: "White", theme: ColorWhiteSand },
 ];
 
 const typographyStyles = [
-  { name: "White", style: TypographyColorWhite },
-  { name: "Black", style: TypographyColorBlack },
+  { name: "White", theme: TypographyColorWhite },
+  { name: "Black", theme: TypographyColorBlack },
 ];
+
+const fonts = [{ name: "Alex", theme: FontAlexBrush }];
 
 const ThemesRecord: Record<string, Theme> = {};
 
 colors.forEach((color) => {
   typographyStyles.forEach((typography) => {
-    const key = `AlexBrush-${color.name}-${typography.name.charAt(0)}`;
-    const palette = PaletteTextChanges(color.color, typography.style);
-    ThemesRecord[key] = PaletteChanges(FontAlexBrush, palette);
+    fonts.forEach((font) => {
+      const key = `${font.name}-${color.name}-${typography.name.charAt(0)}`;
+      const palette = PaletteTextChanges(color.theme, typography.theme);
+      ThemesRecord[key] = PaletteChanges(font.theme, palette);
+    });
   });
 });
 

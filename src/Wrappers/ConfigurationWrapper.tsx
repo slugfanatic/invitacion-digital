@@ -4,7 +4,7 @@ import { useThemeContext } from "../Context/ThemeContext";
 import { useCelebrationContext } from "../Context/CelebrationContext";
 
 export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
-  const { changeTheme } = useThemeContext();
+  const { changeTheme, themeNames } = useThemeContext();
   const { updateCelebration } = useCelebrationContext();
 
   const setBoda = () => {
@@ -26,37 +26,37 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
           dateOrTime: "1:30 - 2:00 PM",
           title: "Recepción",
           description: "",
-          iconType: "start",
+          iconType: "festival",
         },
         {
           dateOrTime: "2:00 - 3:00 PM",
           title: "Ceremonia",
           description: "Religiosa y Civil",
-          iconType: "festival",
+          iconType: "church",
         },
         {
           dateOrTime: "3:00 - 4:00 PM",
           title: "Cocktail",
           description: "",
-          iconType: "festival",
+          iconType: "cup",
         },
         {
           dateOrTime: "4:10 - 5:10 PM",
           title: "Banquete",
           description: "",
-          iconType: "festival",
+          iconType: "brunch",
         },
         {
           dateOrTime: "5:10 - 11:30 PM",
           title: "Fiesta",
           description: "",
-          iconType: "festival",
+          iconType: "cake",
         },
         {
           dateOrTime: "",
           title: "Tornaboda",
           description: "",
-          iconType: "",
+          iconType: "darkMode",
         },
       ],
     });
@@ -92,31 +92,31 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
           dateOrTime: "2:00 - 3:00 PM",
           title: "Ceremonia",
           description: "Religiosa y Civil",
-          iconType: "festival",
+          iconType: "church",
         },
         {
           dateOrTime: "3:00 - 4:00 PM",
           title: "Cocktail",
           description: "",
-          iconType: "festival",
+          iconType: "cup",
         },
         {
           dateOrTime: "4:10 - 5:10 PM",
           title: "Banquete",
           description: "",
-          iconType: "festival",
+          iconType: "brunch",
         },
         {
           dateOrTime: "5:10 - 11:30 PM",
           title: "Fiesta",
           description: "",
-          iconType: "festival",
+          iconType: "cake",
         },
         {
           dateOrTime: "",
           title: "Tornaboda",
           description: "",
-          iconType: "",
+          iconType: "darkMode",
         },
       ],
     });
@@ -125,14 +125,13 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
   return (
     <>
       <div>
-        <button onClick={() => changeTheme("Alex-W-Classic")}>ClassicW</button>
-        <button onClick={() => changeTheme("Alex-B-Classic")}>ClassicB</button>
-        <button onClick={() => changeTheme("Alex-W-Green")}>GreenW</button>
-        <button onClick={() => changeTheme("Alex-B-Green")}>GreenB</button>
-        <button onClick={() => changeTheme("Alex-W-Pink")}>PinkW</button>
-        <button onClick={() => changeTheme("Alex-B-Pink")}>PinkB</button>
-        <button onClick={() => changeTheme("Alex-W-White")}>WhiteW</button>
-        <button onClick={() => changeTheme("Alex-B-White")}>WhiteB</button>
+        <select onChange={(e) => changeTheme(e.target.value)}>
+          {themeNames.map((theme) => (
+            <option key={theme} value={theme}>
+              {theme}
+            </option>
+          ))}
+        </select>
       </div>
       <div>
         <button onClick={() => setBoda()}>Boda</button>

@@ -11,20 +11,17 @@ export const useThemeContext = () =>
 export const ThemeContextProvider: React.FC<IContextProvider> = ({
   children,
 }) => {
-  const [currentTheme, setCurrentTheme] = useState<string>(
-    "AlexBrush-RedBlue-W"
-  );
+  const [currentTheme, setCurrentTheme] = useState<string>("Alex-RedBlue-W");
+  const themeNames = Object.keys(ThemesRecord);
 
   const changeTheme = (theme: string) => {
     if (ThemesRecord.hasOwnProperty(theme)) {
       setCurrentTheme(theme);
-    } else {
-      console.error(`El tema '${theme}' no existe.`);
     }
   };
 
   return (
-    <ThemeContext.Provider value={{ currentTheme, changeTheme }}>
+    <ThemeContext.Provider value={{ currentTheme, changeTheme, themeNames }}>
       <ThemeProvider theme={ThemesRecord[currentTheme]}>
         {children}
       </ThemeProvider>
