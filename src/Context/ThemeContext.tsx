@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import { ThemeProvider } from "@mui/material";
-import { ThemeContextType, ThemeType } from "../Types/types";
-import { ThemesRecord } from "../Themes/ThemesRecord";
+import { ThemeContextType } from "../Types/types";
+import ThemesRecord from "../Themes/ThemesRecord";
 import IContextProvider from "../Interfaces/Themes/IContextProvider";
 
 const ThemeContext = createContext<ThemeContextType | null>(null);
@@ -11,13 +11,17 @@ export const useThemeContext = () =>
 export const ThemeContextProvider: React.FC<IContextProvider> = ({
   children,
 }) => {
-  const [currentTheme, setCurrentTheme] = useState<ThemeType>("Alex-W-Classic");
+  const [currentTheme, setCurrentTheme] = useState<string>(
+    "AlexBrush-RedBlue-W"
+  );
 
-  const changeTheme = (theme: ThemeType) => {
-    setCurrentTheme(theme);
+  const changeTheme = (theme: string) => {
+    if (ThemesRecord.hasOwnProperty(theme)) {
+      setCurrentTheme(theme);
+    } else {
+      console.error(`El tema '${theme}' no existe.`);
+    }
   };
-
-  console.log(ThemesRecord[currentTheme]);
 
   return (
     <ThemeContext.Provider value={{ currentTheme, changeTheme }}>

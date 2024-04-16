@@ -1,23 +1,36 @@
 import { Theme } from "@mui/material";
-import { ThemeType } from "../Types/types";
-import {
-  AlexBrushWClasic,
-  AlexBrushBClasic,
-  AlexBrushWGreen,
-  AlexBrushBGreen,
-  AlexBrushWPink,
-  AlexBrushBPink,
-  AlexBrushWWhite,
-  AlexBrushBWhite,
-} from "./Pages/AlexBrush";
+import ColorRedBlue from "./Shared/ColorRedBlue";
+import ColorGreenForest from "./Shared/ColorGreenForest";
+import ColorPink from "./Shared/ColorPink";
+import ColorWhiteSand from "./Shared/ColorWhiteSand";
 
-export const ThemesRecord: Record<ThemeType, Theme> = {
-  "Alex-W-Classic": AlexBrushWClasic,
-  "Alex-B-Classic": AlexBrushBClasic,
-  "Alex-W-Green": AlexBrushWGreen,
-  "Alex-B-Green": AlexBrushBGreen,
-  "Alex-W-Pink": AlexBrushWPink,
-  "Alex-B-Pink": AlexBrushBPink,
-  "Alex-W-White": AlexBrushWWhite,
-  "Alex-B-White": AlexBrushBWhite,
-};
+import TypographyColorWhite from "./Shared/TypographyColorWhite";
+import TypographyColorBlack from "./Shared/TypographyColorBlack";
+
+import PaletteTextChanges from "../Utils/PaletteTextChanges";
+import PaletteChanges from "../Utils/PaletteChanges";
+import FontAlexBrush from "./Shared/FontAlexBrush";
+
+const colors = [
+  { name: "RedBlue", color: ColorRedBlue },
+  { name: "Green", color: ColorGreenForest },
+  { name: "Pink", color: ColorPink },
+  { name: "White", color: ColorWhiteSand },
+];
+
+const typographyStyles = [
+  { name: "White", style: TypographyColorWhite },
+  { name: "Black", style: TypographyColorBlack },
+];
+
+const ThemesRecord: Record<string, Theme> = {};
+
+colors.forEach((color) => {
+  typographyStyles.forEach((typography) => {
+    const key = `AlexBrush-${color.name}-${typography.name.charAt(0)}`;
+    const palette = PaletteTextChanges(color.color, typography.style);
+    ThemesRecord[key] = PaletteChanges(FontAlexBrush, palette);
+  });
+});
+
+export default ThemesRecord;

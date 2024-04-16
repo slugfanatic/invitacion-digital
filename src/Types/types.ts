@@ -27,19 +27,9 @@ export type ColorType =
 
 export type ContainerType = "full" | "margin" | "card";
 
-export type ThemeType =
-  | "Alex-W-Classic"
-  | "Alex-B-Classic"
-  | "Alex-W-Green"
-  | "Alex-B-Green"
-  | "Alex-W-Pink"
-  | "Alex-B-Pink"
-  | "Alex-W-White"
-  | "Alex-B-White";
-
 export type ThemeContextType = {
-  currentTheme: ThemeType;
-  changeTheme: (theme: ThemeType) => void;
+  currentTheme: string;
+  changeTheme: (theme: string) => void;
 };
 
 export type CelebrationType = "¡Nos Casamos!" | "Mis Tres Años";
