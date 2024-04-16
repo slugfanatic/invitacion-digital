@@ -1,13 +1,11 @@
 import { WeddingRoutes } from "./Routes";
-import { ConfigurationWrapper, ProvidersWrapper } from "./Wrappers";
+import { ProvidersWrapper } from "./Wrappers";
 import logo from "./logo.svg";
 
 const App = () => {
   return (
     <ProvidersWrapper>
-      <ConfigurationWrapper>
-        <WeddingRoutes />
-      </ConfigurationWrapper>
+      <WeddingRoutes />
     </ProvidersWrapper>
   );
 };

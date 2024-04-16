@@ -1,23 +1,30 @@
 import React from "react";
 import IChildrenProp from "../Interfaces/Base/IChildrenProp";
 import { useThemeContext } from "../Context/ThemeContext";
-import { useCelebrationContext } from "../Context/CelebrationContext";
-import { bodaData, tresAniosData } from "../Utils/celebrationData";
+import { Link } from "react-router-dom";
 
 export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
   const { changeTheme, themeNames } = useThemeContext();
-  const { updateCelebration } = useCelebrationContext();
-
-  const setBoda = () => {
-    updateCelebration(bodaData);
-  };
-
-  const setTresAños = () => {
-    updateCelebration(tresAniosData);
-  };
 
   return (
     <>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/invitacion-digital/">Inicio</Link>
+          </li>
+          <li>
+            <Link to="/invitacion-digital/RafaellayBeni">Boda</Link>
+          </li>
+          <li>
+            <Link to="/invitacion-digital/wedding">Página de Boda</Link>
+          </li>
+          <li>
+            <Link to="/invitacion-digital/clasic">Página Clásica</Link>
+          </li>
+        </ul>
+      </nav>
+
       <div>
         <select onChange={(e) => changeTheme(e.target.value)}>
           {themeNames.map((theme) => (
@@ -26,10 +33,6 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
             </option>
           ))}
         </select>
-      </div>
-      <div>
-        <button onClick={() => setBoda()}>Boda</button>
-        <button onClick={() => setTresAños()}>3 Años</button>
       </div>
       {children}
     </>

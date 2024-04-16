@@ -8,4 +8,3 @@ export { default as CptTranslucentLayer } from "./CptTranslucentLayer/CptTranslu
 export { default as CptVerticalTimeline } from "./CptVerticalTimeline/CptVerticalTimeline";
 export { default as CptWrapper } from "./CptWrapper/CptWrapper";
 export { default as IconMapper } from "./IconMapper/IconMapper";
-export { default as VerticalTimeline } from "./VerticalTimeline/VerticalTimeline";

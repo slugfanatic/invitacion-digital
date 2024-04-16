@@ -6,7 +6,6 @@ const WeddingPageClasic: React.FC = () => {
   return (
     <CptWrapper>
       <PPCelebrantsPresentation />
-      <PPCelebrantsPresentation />
     </CptWrapper>
   );
 };

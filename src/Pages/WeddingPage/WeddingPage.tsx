@@ -5,7 +5,12 @@ import { Button, Stack, useMediaQuery } from "@mui/material";
 
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import "./WeddingPage.scss";
-import { IconMapper, VerticalTimeline } from "../../Components/Reusable";
+import {
+  CptVerticalTimeline,
+  CptWrapper,
+  IconMapper,
+} from "../../Components/Reusable";
+import { PPSaveTheDate } from "../../Components/PageParts";
 
 type Countdown = {
   days: number;
@@ -67,7 +72,7 @@ const WeddingPage: React.FC = () => {
   }, []);
 
   return (
-    <>
+    <CptWrapper>
       <Box component="section">
         <div className="mainBackground">
           <div className="mainContent">
@@ -108,31 +113,7 @@ const WeddingPage: React.FC = () => {
             <Stack spacing={2}>
               <h1 className="whiteText shadowText">Save the Date</h1>
               <h3 className="whiteText upperCase">8 Junio 2024</h3>
-              {count.days > 0 ||
-              count.hours > 0 ||
-              count.minutes > 0 ||
-              count.seconds > 0 ? (
-                <Grid container spacing={2}>
-                  <Grid xl={3} xs={12} md={6} className="timer days">
-                    <span className="whiteText">{count.days}</span>
-                    <p className="whiteText">Days</p>
-                  </Grid>
-                  <Grid xl={3} xs={12} md={6} className="timer hours">
-                    <span className="whiteText">{count.hours}</span>
-                    <p className="whiteText">Hours</p>
-                  </Grid>
-                  <Grid xl={3} xs={12} md={6} className="timer minutes">
-                    <span className="whiteText">{count.minutes}</span>
-                    <p className="whiteText">Minutes</p>
-                  </Grid>
-                  <Grid xl={3} xs={12} md={6} className="timer seconds">
-                    <span className="whiteText">{count.seconds}</span>
-                    <p className="whiteText">Seconds</p>
-                  </Grid>
-                </Grid>
-              ) : (
-                <h2 className="whiteText">Bienvenidos</h2>
-              )}
+              <PPSaveTheDate />
             </Stack>
           </div>
         </div>
@@ -265,51 +246,12 @@ const WeddingPage: React.FC = () => {
             <Stack spacing={2}>
               <h2 className="upperCase">Itinerario</h2>
               <h3 className="upperCase">¡ACOMPÁÑANOS!</h3>
-              <VerticalTimeline
-                events={[
-                  {
-                    dateOrTime: "1:30 - 2:00 PM",
-                    title: "Recepción",
-                    description: "",
-                    iconFinder: "festival",
-                  },
-                  {
-                    dateOrTime: "2:00 - 3:00 PM",
-                    title: "Ceremonia",
-                    description: "Religiosa y Civil",
-                    iconFinder: "festival",
-                  },
-                  {
-                    dateOrTime: "3:00 - 4:00 PM",
-                    title: "Cocktail",
-                    description: "",
-                    iconFinder: "festival",
-                  },
-                  {
-                    dateOrTime: "4:10 - 5:10 PM",
-                    title: "Banquete",
-                    description: "",
-                    iconFinder: "festival",
-                  },
-                  {
-                    dateOrTime: "5:10 - 11:30 PM",
-                    title: "Fiesta",
-                    description: "",
-                    iconFinder: "festival",
-                  },
-                  {
-                    dateOrTime: "11:30 PM - 1:00 AM",
-                    title: "Tornaboda",
-                    description: "",
-                    iconFinder: "darkMode",
-                  },
-                ]}
-              />
+              <CptVerticalTimeline />
             </Stack>
           </div>
         </div>
       </Box>
-    </>
+    </CptWrapper>
   );
 };
 

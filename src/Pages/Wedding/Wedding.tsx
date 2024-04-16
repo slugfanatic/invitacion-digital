@@ -1,3 +1,5 @@
+import { useCelebrationContext } from "../../Context/CelebrationContext";
+import { bodaData } from "../../Utils/celebrationData";
 import {
   CptContainer,
   CptPadding,
@@ -13,6 +15,9 @@ import {
 import { LblCelebrantsInvitationMessage } from "../../Components/Labels";
 
 const Wedding: React.FC = () => {
+  const { updateCelebration } = useCelebrationContext();
+  updateCelebration(bodaData);
+
   return (
     <CptWrapper>
       <CptContainer type="full" background="pictureH">

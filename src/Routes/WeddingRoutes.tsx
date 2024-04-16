@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import { Suspense, lazy } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const ThreeYears = lazy(() => import("../Pages/ThreeYears/ThreeYears"));
@@ -12,19 +12,35 @@ export const WeddingRoutes: React.FC = () => {
   const router = createBrowserRouter([
     {
       path: "/invitacion-digital/",
-      element: <ThreeYears />,
+      element: (
+        <Suspense>
+          <ThreeYears />
+        </Suspense>
+      ),
     },
     {
       path: "/invitacion-digital/RafaellayBeni",
-      element: <Wedding />,
+      element: (
+        <Suspense>
+          <Wedding />
+        </Suspense>
+      ),
     },
     {
       path: "/invitacion-digital/wedding",
-      element: <WeddingPage />,
+      element: (
+        <Suspense>
+          <WeddingPage />
+        </Suspense>
+      ),
     },
     {
       path: "/invitacion-digital/clasic",
-      element: <WeddingPageClasic />,
+      element: (
+        <Suspense>
+          <WeddingPageClasic />
+        </Suspense>
+      ),
     },
   ]);
 
