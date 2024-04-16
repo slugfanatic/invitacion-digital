@@ -7,10 +7,10 @@ const CptSplitBr: React.FC<{ message: string }> = ({ message: mensaje }) => {
   return (
     <>
       {messageParts.map((parts, index) => (
-        <>
+        <span key={index}>
           {parts}
           {index !== messageParts.length - 1 && <br />}
-        </>
+        </span>
       ))}
     </>
   );
