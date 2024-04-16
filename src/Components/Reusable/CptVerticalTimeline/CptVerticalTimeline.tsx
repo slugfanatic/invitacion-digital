@@ -21,9 +21,9 @@ const CptVerticalTimeline: React.FC = () => {
     return (
       dateOrTime && (
         <TimelineOppositeContent
-          sx={{ margin: "auto 0", textShadow: "0px 0px 5px #000" }}
+          sx={{ margin: "auto 0", textShadow: "0px 0px 10px #000" }}
           variant="body2"
-          color="text.primary"
+          color="seconday"
         >
           {dateOrTime}
         </TimelineOppositeContent>
