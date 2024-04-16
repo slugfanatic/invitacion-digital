@@ -1,3 +1,5 @@
+import ITimeLineEvent from "../Interfaces/Components/ITimeLineEvent";
+
 export type AlignType =
   | "inherit"
   | "left"
@@ -42,6 +44,7 @@ export type CelebrationInformationType = {
   celebrationDate: Date;
   imageH: string;
   imageV: string;
+  events: ITimeLineEvent[];
 };
 
 export type CelebrationContextType = {

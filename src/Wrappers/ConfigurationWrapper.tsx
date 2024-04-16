@@ -21,6 +21,44 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
       celebrationDate: new Date("2024-06-08 13:30:00"),
       imageV: require("../assets/images/slide-1.jpg"),
       imageH: require("../assets/images/slide-1.jpg"),
+      events: [
+        {
+          dateOrTime: "1:30 - 2:00 PM",
+          title: "Recepción",
+          description: "",
+          iconType: "start",
+        },
+        {
+          dateOrTime: "2:00 - 3:00 PM",
+          title: "Ceremonia",
+          description: "Religiosa y Civil",
+          iconType: "festival",
+        },
+        {
+          dateOrTime: "3:00 - 4:00 PM",
+          title: "Cocktail",
+          description: "",
+          iconType: "festival",
+        },
+        {
+          dateOrTime: "4:10 - 5:10 PM",
+          title: "Banquete",
+          description: "",
+          iconType: "festival",
+        },
+        {
+          dateOrTime: "5:10 - 11:30 PM",
+          title: "Fiesta",
+          description: "",
+          iconType: "festival",
+        },
+        {
+          dateOrTime: "",
+          title: "Tornaboda",
+          description: "",
+          iconType: "",
+        },
+      ],
     });
   };
 
@@ -43,6 +81,44 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
       celebrationDate: new Date("2024-05-30 13:30:00"),
       imageV: require("../assets/images/Vertical.jpeg"),
       imageH: require("../assets/images/Horizontal.jpeg"),
+      events: [
+        {
+          dateOrTime: "1:30 - 2:00 PM",
+          title: "Recepción",
+          description: "",
+          iconType: "festival",
+        },
+        {
+          dateOrTime: "2:00 - 3:00 PM",
+          title: "Ceremonia",
+          description: "Religiosa y Civil",
+          iconType: "festival",
+        },
+        {
+          dateOrTime: "3:00 - 4:00 PM",
+          title: "Cocktail",
+          description: "",
+          iconType: "festival",
+        },
+        {
+          dateOrTime: "4:10 - 5:10 PM",
+          title: "Banquete",
+          description: "",
+          iconType: "festival",
+        },
+        {
+          dateOrTime: "5:10 - 11:30 PM",
+          title: "Fiesta",
+          description: "",
+          iconType: "festival",
+        },
+        {
+          dateOrTime: "",
+          title: "Tornaboda",
+          description: "",
+          iconType: "",
+        },
+      ],
     });
   };
 
