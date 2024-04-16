@@ -12,7 +12,7 @@ export const ThemeContextProvider: React.FC<IContextProvider> = ({
   children,
 }) => {
   const [currentTheme, setCurrentTheme] = useState<string>("Alex-RedBlue-W");
-  const themeNames = Object.keys(ThemesRecord);
+  const themeNames = Object.keys(ThemesRecord).sort();
 
   const changeTheme = (theme: string) => {
     if (ThemesRecord.hasOwnProperty(theme)) {

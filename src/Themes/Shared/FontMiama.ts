@@ -13,7 +13,7 @@ const FontMiama = deepmerge(
         fontFamily: "Miama",
       },
       h2: {
-        fontFamily: "Titillium",
+        fontFamily: "Quicksand-Italic",
       },
       h3: {
         fontFamily: "Montserrat",
