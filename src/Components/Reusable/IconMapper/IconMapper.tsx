@@ -1,11 +1,13 @@
 import React from "react";
-import { Cake } from "@mui/icons-material";
 
 const IconMapper = (iconName: string): React.ReactElement => {
   const Icons = require("@mui/icons-material");
   const iconMap: { [key: string]: React.ElementType } = {
     default: Icons.Info,
-    cake: Cake,
+    cake: Icons.Cake,
+    cup: Icons.LocalBar,
+    brunch: Icons.BrunchDining,
+    church: Icons.Church,
     start: Icons.EventAvailable,
     end: Icons.EventBusy,
     milestone: Icons.CheckCircle,
