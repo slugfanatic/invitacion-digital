@@ -1,7 +1,7 @@
 import { Theme, createTheme } from "@mui/material";
 import IThemeChanges from "../Interfaces/Themes/IThemeChanges";
 
-const applyPaletteChanges = (theme: Theme, changes: IThemeChanges): Theme => {
+const PaletteChanges = (theme: Theme, changes: IThemeChanges): Theme => {
   return createTheme({
     ...theme,
     ...(changes.palette && {
@@ -10,4 +10,4 @@ const applyPaletteChanges = (theme: Theme, changes: IThemeChanges): Theme => {
   });
 };
 
-export default applyPaletteChanges;
+export default PaletteChanges;

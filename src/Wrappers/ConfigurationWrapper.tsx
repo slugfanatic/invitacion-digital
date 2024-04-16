@@ -125,10 +125,14 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
   return (
     <>
       <div>
-        <button onClick={() => changeTheme("Classic")}>Classic</button>
-        <button onClick={() => changeTheme("Green")}>Green</button>
-        <button onClick={() => changeTheme("Pink")}>Pink</button>
-        <button onClick={() => changeTheme("White")}>White</button>
+        <button onClick={() => changeTheme("Alex-W-Classic")}>ClassicW</button>
+        <button onClick={() => changeTheme("Alex-B-Classic")}>ClassicB</button>
+        <button onClick={() => changeTheme("Alex-W-Green")}>GreenW</button>
+        <button onClick={() => changeTheme("Alex-B-Green")}>GreenB</button>
+        <button onClick={() => changeTheme("Alex-W-Pink")}>PinkW</button>
+        <button onClick={() => changeTheme("Alex-B-Pink")}>PinkB</button>
+        <button onClick={() => changeTheme("Alex-W-White")}>WhiteW</button>
+        <button onClick={() => changeTheme("Alex-B-White")}>WhiteB</button>
       </div>
       <div>
         <button onClick={() => setBoda()}>Boda</button>

@@ -38,11 +38,6 @@ const ColorGreenForest = createTheme({
       dark: "#40E0D0", // Verde Oscuro
       contrastText: "#000000", // Texto de contraste para Verde Agua
     },
-    text: {
-      primary: "rgba(255, 255, 255, 0.90)", // Texto principal (blanco)
-      secondary: "rgba(255, 255, 255, 0.80)", // Texto secundario (gris claro)
-      disabled: "rgba(255, 255, 255, 0.70)", // Texto deshabilitado (gris más claro)
-    },
   },
 });
 

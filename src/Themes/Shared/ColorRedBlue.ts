@@ -38,11 +38,6 @@ const ColorRedBlue = createTheme({
       dark: "#8E0000", // Rojo más oscuro (repetido aquí para completar la paleta)
       contrastText: "#ffffff", // Texto de contraste para Rojo (repetido aquí para completar la paleta)
     },
-    text: {
-      primary: "rgba(255, 255, 255, 0.90)", // Texto principal (blanco)
-      secondary: "rgba(255, 255, 255, 0.80)", // Texto secundario (gris claro)
-      disabled: "rgba(255, 255, 255, 0.70)", // Texto deshabilitado (gris más claro)
-    },
   },
 });
 

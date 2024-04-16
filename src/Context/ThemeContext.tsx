@@ -11,11 +11,13 @@ export const useThemeContext = () =>
 export const ThemeContextProvider: React.FC<IContextProvider> = ({
   children,
 }) => {
-  const [currentTheme, setCurrentTheme] = useState<ThemeType>("Classic");
+  const [currentTheme, setCurrentTheme] = useState<ThemeType>("Alex-W-Classic");
 
   const changeTheme = (theme: ThemeType) => {
     setCurrentTheme(theme);
   };
+
+  console.log(ThemesRecord[currentTheme]);
 
   return (
     <ThemeContext.Provider value={{ currentTheme, changeTheme }}>

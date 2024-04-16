@@ -1,8 +1,21 @@
 import {
-  AlexBrushClasic,
-  AlexBrushGreen,
-  AlexBrushPink,
-  AlexBrushWhite,
+  AlexBrushWClasic,
+  AlexBrushBClasic,
+  AlexBrushWGreen,
+  AlexBrushBGreen,
+  AlexBrushWPink,
+  AlexBrushBPink,
+  AlexBrushWWhite,
+  AlexBrushBWhite,
 } from "./Pages/AlexBrush";
 
-export { AlexBrushClasic, AlexBrushGreen, AlexBrushPink, AlexBrushWhite };
+export {
+  AlexBrushWClasic,
+  AlexBrushBClasic,
+  AlexBrushWGreen,
+  AlexBrushBGreen,
+  AlexBrushWPink,
+  AlexBrushBPink,
+  AlexBrushWWhite,
+  AlexBrushBWhite,
+};
