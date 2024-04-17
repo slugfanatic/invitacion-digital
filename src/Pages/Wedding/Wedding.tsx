@@ -8,7 +8,7 @@ import {
 } from "../../Components/Reusable";
 import {
   PPCelebrantsLongMessage,
-  PPCelebrantsPresentationRight,
+  PPCelebrantsPresentation,
   PPSaveTheDate,
   PPVerticalTimeLine,
 } from "../../Components/PageParts";
@@ -22,7 +22,7 @@ const Wedding: React.FC = () => {
     <CptWrapper>
       <CptContainer type="full" background="pictureH">
         <CptTranslucentLayer color="secondary" glass="lower">
-          <PPCelebrantsPresentationRight />
+          <PPCelebrantsPresentation distribution="right" />
         </CptTranslucentLayer>
       </CptContainer>
       <CptContainer type="margin" background="alternative">

@@ -1,11 +1,11 @@
 import { CptWrapper } from "../../Components/Reusable";
-import { PPCelebrantsPresentationLeft } from "../../Components/PageParts";
+import { PPCelebrantsPresentation } from "../../Components/PageParts";
 import "./WeddingPageClasic.scss";
 
 const WeddingPageClasic: React.FC = () => {
   return (
     <CptWrapper>
-      <PPCelebrantsPresentationLeft />
+      <PPCelebrantsPresentation distribution="left" />
     </CptWrapper>
   );
 };

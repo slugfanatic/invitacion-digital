@@ -1,4 +1,3 @@
-import { Theme } from "@mui/material";
 import ITimeLineEvent from "../Interfaces/Components/ITimeLineEvent";
 
 export type AlignType =
@@ -51,3 +50,5 @@ export type CelebrationContextType = {
   currentCelebrant: CelebrationInformationType;
   updateCelebration: (theme: CelebrationInformationType) => void;
 };
+
+export type DistributionType = "left" | "middle" | "right";
