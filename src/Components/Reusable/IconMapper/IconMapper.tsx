@@ -6,6 +6,7 @@ const IconMapper = (iconName: string): React.ReactElement => {
     default: Icons.Info,
     cake: Icons.Cake,
     cup: Icons.LocalBar,
+    lunch: Icons.LunchDining,
     brunch: Icons.BrunchDining,
     church: Icons.Church,
     start: Icons.EventAvailable,
@@ -16,6 +17,9 @@ const IconMapper = (iconName: string): React.ReactElement => {
     darkMode: Icons.DarkMode,
     festival: Icons.Festival,
     eventStart: Icons.EventIcon,
+    soccer: Icons.SportsSoccer,
+    attractions: Icons.Attractions,
+    emoji: Icons.EmojiEmotions,
   };
 
   if (!iconMap[iconName]) {
