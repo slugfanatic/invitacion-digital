@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/invitacion-digital/static/css/main.2b9f15dd.css",
-    "main.js": "/invitacion-digital/static/js/main.51be9265.js",
+    "main.js": "/invitacion-digital/static/js/main.503f9c73.js",
     "static/js/453.1e2eb5f2.chunk.js": "/invitacion-digital/static/js/453.1e2eb5f2.chunk.js",
     "static/css/496.b48109fc.chunk.css": "/invitacion-digital/static/css/496.b48109fc.chunk.css",
     "static/js/496.f1fbd2e8.chunk.js": "/invitacion-digital/static/js/496.f1fbd2e8.chunk.js",
@@ -9,7 +9,7 @@
     "static/js/698.0b4aa709.chunk.js": "/invitacion-digital/static/js/698.0b4aa709.chunk.js",
     "static/css/668.5e9be601.chunk.css": "/invitacion-digital/static/css/668.5e9be601.chunk.css",
     "static/js/668.bc646592.chunk.js": "/invitacion-digital/static/js/668.bc646592.chunk.js",
-    "static/css/439.4dcabf57.chunk.css": "/invitacion-digital/static/css/439.4dcabf57.chunk.css",
+    "static/css/439.429a9221.chunk.css": "/invitacion-digital/static/css/439.429a9221.chunk.css",
     "static/js/439.2005f76a.chunk.js": "/invitacion-digital/static/js/439.2005f76a.chunk.js",
     "static/js/556.a088ce86.chunk.js": "/invitacion-digital/static/js/556.a088ce86.chunk.js",
     "static/js/163.9943f2c9.chunk.js": "/invitacion-digital/static/js/163.9943f2c9.chunk.js",
@@ -22,7 +22,7 @@
     "static/media/MontserratAlternates-Regular.otf": "/invitacion-digital/static/media/MontserratAlternates-Regular.a5a4219b37b4e2270a3c.otf",
     "static/media/JosefinSans-Regular.ttf": "/invitacion-digital/static/media/JosefinSans-Regular.9a9558c2798e8a2f8c5c.ttf",
     "static/media/JosefinSans-Italic.ttf": "/invitacion-digital/static/media/JosefinSans-Italic.a99b20cee826bbb31de8.ttf",
-    "static/media/_b3fc07ce-c21d-4b70-88c2-81bd750ec9d0.jpg": "/invitacion-digital/static/media/_b3fc07ce-c21d-4b70-88c2-81bd750ec9d0.a4a91ea348496d9285a9.jpg",
+    "static/media/nubesycielo.jpg": "/invitacion-digital/static/media/nubesycielo.a4a91ea348496d9285a9.jpg",
     "static/media/Miama.otf": "/invitacion-digital/static/media/Miama.619ce37eeab20424d4a3.otf",
     "static/media/CaviarDreams.ttf": "/invitacion-digital/static/media/CaviarDreams.70bebd2a13d7abe8547c.ttf",
     "static/media/Titillium-Regular.otf": "/invitacion-digital/static/media/Titillium-Regular.8adc792937d5cb3a6803.otf",
@@ -34,7 +34,7 @@
     "static/media/Sofia-Regular.otf": "/invitacion-digital/static/media/Sofia-Regular.e2dee251fd62f4f4bc0b.otf",
     "index.html": "/invitacion-digital/index.html",
     "main.2b9f15dd.css.map": "/invitacion-digital/static/css/main.2b9f15dd.css.map",
-    "main.51be9265.js.map": "/invitacion-digital/static/js/main.51be9265.js.map",
+    "main.503f9c73.js.map": "/invitacion-digital/static/js/main.503f9c73.js.map",
     "453.1e2eb5f2.chunk.js.map": "/invitacion-digital/static/js/453.1e2eb5f2.chunk.js.map",
     "496.b48109fc.chunk.css.map": "/invitacion-digital/static/css/496.b48109fc.chunk.css.map",
     "496.f1fbd2e8.chunk.js.map": "/invitacion-digital/static/js/496.f1fbd2e8.chunk.js.map",
@@ -42,13 +42,13 @@
     "698.0b4aa709.chunk.js.map": "/invitacion-digital/static/js/698.0b4aa709.chunk.js.map",
     "668.5e9be601.chunk.css.map": "/invitacion-digital/static/css/668.5e9be601.chunk.css.map",
     "668.bc646592.chunk.js.map": "/invitacion-digital/static/js/668.bc646592.chunk.js.map",
-    "439.4dcabf57.chunk.css.map": "/invitacion-digital/static/css/439.4dcabf57.chunk.css.map",
+    "439.429a9221.chunk.css.map": "/invitacion-digital/static/css/439.429a9221.chunk.css.map",
     "439.2005f76a.chunk.js.map": "/invitacion-digital/static/js/439.2005f76a.chunk.js.map",
     "556.a088ce86.chunk.js.map": "/invitacion-digital/static/js/556.a088ce86.chunk.js.map",
     "163.9943f2c9.chunk.js.map": "/invitacion-digital/static/js/163.9943f2c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b9f15dd.css",
-    "static/js/main.51be9265.js"
+    "static/js/main.503f9c73.js"
   ]
 }
