@@ -26,6 +26,8 @@ export type ColorType =
   | "warning"
   | undefined;
 
+export type PositionType = "left" | "right" | "alternate" | "alternate-reverse";
+
 export type ContainerType = "full" | "margin" | "card";
 
 export type ThemeContextType = {

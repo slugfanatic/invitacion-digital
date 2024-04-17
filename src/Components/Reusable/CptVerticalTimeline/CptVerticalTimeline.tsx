@@ -11,8 +11,11 @@ import {
 import { Paper, Theme, Typography } from "@mui/material";
 import IconMapper from "../IconMapper/IconMapper";
 import { useCelebrationContext } from "../../../Context/CelebrationContext";
+import ICptVerticalTimeline from "../../../Interfaces/Components/ICptVerticalTimeline";
 
-const CptVerticalTimeline: React.FC = () => {
+const CptVerticalTimeline: React.FC<ICptVerticalTimeline> = ({
+  position = "alternate",
+}) => {
   const {
     currentCelebrant: { events },
   } = useCelebrationContext();
@@ -65,7 +68,7 @@ const CptVerticalTimeline: React.FC = () => {
   };
 
   return (
-    <Timeline position="alternate">
+    <Timeline position={position}>
       {events.map((event, index) => (
         <TimelineItem key={index}>
           {cptTimelineOppositeContent(event.dateOrTime)}

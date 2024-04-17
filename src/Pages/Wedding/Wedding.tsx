@@ -5,13 +5,13 @@ import {
   CptContainer,
   CptPadding,
   CptTranslucentLayer,
+  CptVerticalTimeline,
   CptWrapper,
 } from "../../Components/Reusable";
 import {
   PPCelebrantsLongMessage,
   PPCelebrantsPresentation,
   PPSaveTheDate,
-  PPVerticalTimeLine,
 } from "../../Components/PageParts";
 import { LblCelebrantsInvitationMessage } from "../../Components/Labels";
 
@@ -40,7 +40,7 @@ const Wedding: React.FC = () => {
         <PPCelebrantsLongMessage />
       </CptContainer>
       <CptContainer type="card">
-        <PPVerticalTimeLine />
+        <CptVerticalTimeline />
       </CptContainer>
     </CptWrapper>
   );
