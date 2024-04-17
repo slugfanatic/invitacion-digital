@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useCelebrationContext } from "../../Context/CelebrationContext";
 import { tresAniosData } from "../../Utils/celebrationData";
 import {
@@ -16,7 +17,10 @@ import { LblCelebrantsInvitationMessage } from "../../Components/Labels";
 
 const Wedding: React.FC = () => {
   const { updateCelebration } = useCelebrationContext();
-  updateCelebration(tresAniosData);
+
+  useEffect(() => {
+    updateCelebration(tresAniosData);
+  }, []);
 
   return (
     <CptWrapper>
@@ -25,10 +29,12 @@ const Wedding: React.FC = () => {
           <PPCelebrantsPresentation />
         </CptTranslucentLayer>
       </CptContainer>
-      <CptContainer type="margin" background="alternative">
-        <CptPadding>
-          <LblCelebrantsInvitationMessage />
-        </CptPadding>
+      <CptContainer type="margin" background="pictureB">
+        <CptTranslucentLayer color="secondary" glass="high">
+          <CptPadding>
+            <LblCelebrantsInvitationMessage />
+          </CptPadding>
+        </CptTranslucentLayer>
       </CptContainer>
       <CptContainer type="card" background="pictureH">
         <PPSaveTheDate />

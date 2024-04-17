@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useCelebrationContext } from "../../Context/CelebrationContext";
 import { bodaData } from "../../Utils/celebrationData";
 import {
@@ -16,7 +17,9 @@ import { LblCelebrantsInvitationMessage } from "../../Components/Labels";
 
 const Wedding: React.FC = () => {
   const { updateCelebration } = useCelebrationContext();
-  updateCelebration(bodaData);
+  useEffect(() => {
+    updateCelebration(bodaData);
+  }, []);
 
   return (
     <CptWrapper>

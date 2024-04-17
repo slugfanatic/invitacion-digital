@@ -9,7 +9,7 @@ const CptContainer: React.FC<ICptContainer> = ({
   background,
 }) => {
   const {
-    currentCelebrant: { imageH, imageV },
+    currentCelebrant: { imageH, imageV, imageB },
   } = useCelebrationContext();
 
   const marginValues = {
@@ -34,6 +34,12 @@ const CptContainer: React.FC<ICptContainer> = ({
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center",
+    },
+    pictureB: {
+      backgroundImage: `url(${imageB})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "bottom center",
     },
   };
 

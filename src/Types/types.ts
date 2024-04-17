@@ -12,7 +12,8 @@ export type BackgroundFillType =
   | "color"
   | "alternative"
   | "pictureH"
-  | "pictureV";
+  | "pictureV"
+  | "pictureB";
 
 export type ColorType =
   | "inherit"
