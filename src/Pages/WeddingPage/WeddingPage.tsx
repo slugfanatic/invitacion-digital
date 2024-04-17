@@ -246,7 +246,6 @@ const WeddingPage: React.FC = () => {
             <Stack spacing={2}>
               <h2 className="upperCase">Itinerario</h2>
               <h3 className="upperCase">¡ACOMPÁÑANOS!</h3>
-              <CptVerticalTimeline />
             </Stack>
           </div>
         </div>
