@@ -3,6 +3,7 @@ import { tresAniosData } from "../../Utils/celebrationData";
 import {
   CptContainer,
   CptPadding,
+  CptTranslucentLayer,
   CptWrapper,
 } from "../../Components/Reusable";
 import {
@@ -20,7 +21,9 @@ const Wedding: React.FC = () => {
   return (
     <CptWrapper>
       <CptContainer type="full" background="pictureH">
-        <PPCelebrantsPresentation />
+        <CptTranslucentLayer glass="lower">
+          <PPCelebrantsPresentation />
+        </CptTranslucentLayer>
       </CptContainer>
       <CptContainer type="margin" background="alternative">
         <CptPadding>

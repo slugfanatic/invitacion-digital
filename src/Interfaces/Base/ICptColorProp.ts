@@ -1,5 +1,5 @@
 interface ICptColorProp {
-  color: "primary" | "secondary";
+  color?: "primary" | "secondary";
 }
 
 export default ICptColorProp;

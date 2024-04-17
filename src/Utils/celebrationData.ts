@@ -13,6 +13,7 @@ export const bodaData = {
   celebrationDate: new Date("2024-06-08 13:30:00"),
   imageV: require("../assets/images/slide-1.jpg"),
   imageH: require("../assets/images/slide-1.jpg"),
+  imageB: require("../assets/images/_b3fc07ce-c21d-4b70-88c2-81bd750ec9d0.jpg"),
   events: [
     {
       dateOrTime: "1:30 - 2:00 PM",
@@ -71,6 +72,7 @@ export const tresAniosData = {
   celebrationDate: new Date("2024-05-30 13:30:00"),
   imageV: require("../assets/images/Vertical.jpeg"),
   imageH: require("../assets/images/Horizontal.jpeg"),
+  imageB: require("../assets/images/_b3fc07ce-c21d-4b70-88c2-81bd750ec9d0.jpg"),
   events: [
     {
       dateOrTime: "10:00 - 11:00 AM",

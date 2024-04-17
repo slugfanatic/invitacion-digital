@@ -43,6 +43,7 @@ export type CelebrationInformationType = {
   celebrationDate: Date;
   imageH: string;
   imageV: string;
+  imageB: string;
   events: ITimeLineEvent[];
 };
 
