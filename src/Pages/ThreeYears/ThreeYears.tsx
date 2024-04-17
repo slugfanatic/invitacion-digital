@@ -44,7 +44,7 @@ const Wedding: React.FC = () => {
           <PPCelebrantsLongMessage />
         </CptTranslucentLayer>
       </CptContainer>
-      <CptContainer type="card">
+      <CptContainer type="card" background="pictureB">
         <CptVerticalTimeline position="right" />
       </CptContainer>
     </CptWrapper>
