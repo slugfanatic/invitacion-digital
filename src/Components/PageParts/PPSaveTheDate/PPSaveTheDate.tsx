@@ -18,7 +18,7 @@ const LeftContent: React.FC = () => (
     </CptGridContainer>
     <CptGridContainer>
       <CptGridLeft>
-        <CptCountdown color="alternate" shape="square" />
+        <CptCountdown color="primary" shape="square" />
       </CptGridLeft>
     </CptGridContainer>
     <CptGridContainer>
@@ -38,7 +38,7 @@ const MiddleContent: React.FC = () => (
     </CptGridContainer>
     <CptGridContainer>
       <CptGridMiddle>
-        <CptCountdown color="alternate" shape="square" />
+        <CptCountdown color="secondary" shape="circle" />
       </CptGridMiddle>
     </CptGridContainer>
     <CptGridContainer>
@@ -58,7 +58,7 @@ const RightContent: React.FC = () => (
     </CptGridContainer>
     <CptGridContainer>
       <CptGridRight>
-        <CptCountdown color="alternate" shape="square" />
+        <CptCountdown color="secondary" shape="square" />
       </CptGridRight>
     </CptGridContainer>
     <CptGridContainer>
