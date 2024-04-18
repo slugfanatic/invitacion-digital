@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/invitacion-digital/static/css/main.2b9f15dd.css",
-    "main.js": "/invitacion-digital/static/js/main.8addd764.js",
+    "main.js": "/invitacion-digital/static/js/main.61a01d79.js",
     "static/js/453.1e2eb5f2.chunk.js": "/invitacion-digital/static/js/453.1e2eb5f2.chunk.js",
     "static/css/898.d6c0624c.chunk.css": "/invitacion-digital/static/css/898.d6c0624c.chunk.css",
     "static/js/898.1cb51703.chunk.js": "/invitacion-digital/static/js/898.1cb51703.chunk.js",
     "static/css/175.d6c0624c.chunk.css": "/invitacion-digital/static/css/175.d6c0624c.chunk.css",
-    "static/js/175.7411ec71.chunk.js": "/invitacion-digital/static/js/175.7411ec71.chunk.js",
+    "static/js/175.92e85a8e.chunk.js": "/invitacion-digital/static/js/175.92e85a8e.chunk.js",
     "static/css/118.c198b26a.chunk.css": "/invitacion-digital/static/css/118.c198b26a.chunk.css",
     "static/js/118.e2391f71.chunk.js": "/invitacion-digital/static/js/118.e2391f71.chunk.js",
     "static/css/697.cb064528.chunk.css": "/invitacion-digital/static/css/697.cb064528.chunk.css",
@@ -35,12 +35,12 @@
     "static/media/Sofia-Regular.otf": "/invitacion-digital/static/media/Sofia-Regular.e2dee251fd62f4f4bc0b.otf",
     "index.html": "/invitacion-digital/index.html",
     "main.2b9f15dd.css.map": "/invitacion-digital/static/css/main.2b9f15dd.css.map",
-    "main.8addd764.js.map": "/invitacion-digital/static/js/main.8addd764.js.map",
+    "main.61a01d79.js.map": "/invitacion-digital/static/js/main.61a01d79.js.map",
     "453.1e2eb5f2.chunk.js.map": "/invitacion-digital/static/js/453.1e2eb5f2.chunk.js.map",
     "898.d6c0624c.chunk.css.map": "/invitacion-digital/static/css/898.d6c0624c.chunk.css.map",
     "898.1cb51703.chunk.js.map": "/invitacion-digital/static/js/898.1cb51703.chunk.js.map",
     "175.d6c0624c.chunk.css.map": "/invitacion-digital/static/css/175.d6c0624c.chunk.css.map",
-    "175.7411ec71.chunk.js.map": "/invitacion-digital/static/js/175.7411ec71.chunk.js.map",
+    "175.92e85a8e.chunk.js.map": "/invitacion-digital/static/js/175.92e85a8e.chunk.js.map",
     "118.c198b26a.chunk.css.map": "/invitacion-digital/static/css/118.c198b26a.chunk.css.map",
     "118.e2391f71.chunk.js.map": "/invitacion-digital/static/js/118.e2391f71.chunk.js.map",
     "697.cb064528.chunk.css.map": "/invitacion-digital/static/css/697.cb064528.chunk.css.map",
@@ -51,6 +51,6 @@
   },
   "entrypoints": [
     "static/css/main.2b9f15dd.css",
-    "static/js/main.8addd764.js"
+    "static/js/main.61a01d79.js"
   ]
 }
