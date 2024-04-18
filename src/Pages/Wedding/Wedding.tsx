@@ -33,8 +33,10 @@ const Wedding: React.FC = () => {
           <LblCelebrantsInvitationMessage />
         </CptPadding>
       </CptContainer>
-      <CptContainer type="card" background="pictureH">
-        <PPSaveTheDate />
+      <CptContainer type="margin" background="pictureH">
+        <CptTranslucentLayer color="secondary" glass="high">
+          <PPSaveTheDate distribution="left" />
+        </CptTranslucentLayer>
       </CptContainer>
       <CptContainer type="card" background="alternative">
         <PPCelebrantsLongMessage />
