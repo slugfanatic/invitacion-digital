@@ -39,7 +39,13 @@ const CptCountdown: React.FC<ICptCountdown> = ({
       }));
 
       return (
-        <Grid2 container spacing={1}>
+        <Grid2
+          container
+          justifyContent="center"
+          alignItems="center"
+          alignContent="center"
+          spacing={1}
+        >
           {updatedCountdownUnits.map(({ value, label, selectedColor }) => (
             <Grid2 key={label} xs="auto">
               <CptCountdownTimeItem

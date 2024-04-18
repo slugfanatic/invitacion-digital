@@ -37,7 +37,9 @@ const Wedding: React.FC = () => {
         </CptTranslucentLayer>
       </CptContainer>
       <CptContainer type="card" background="pictureH">
-        <PPSaveTheDate />
+        <CptTranslucentLayer color="secondary">
+          <PPSaveTheDate distribution="middle" />
+        </CptTranslucentLayer>
       </CptContainer>
       <CptContainer type="card" background="pictureB">
         <CptTranslucentLayer color="primary" glass="medium">
@@ -45,7 +47,7 @@ const Wedding: React.FC = () => {
         </CptTranslucentLayer>
       </CptContainer>
       <CptContainer type="card" background="pictureB">
-        <CptVerticalTimeline position="right" />
+        <CptVerticalTimeline position="left" />
       </CptContainer>
     </CptWrapper>
   );

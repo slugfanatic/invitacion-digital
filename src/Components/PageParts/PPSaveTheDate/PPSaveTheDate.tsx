@@ -1,32 +1,84 @@
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-import { CptCountdown, CptPadding, CptTranslucentLayer } from "../../Reusable";
+import {
+  CptCountdown,
+  CptGridContainer,
+  CptGridLeft,
+  CptGridMiddle,
+  CptGridRight,
+  CptPadding,
+} from "../../Reusable";
 import { LblCelebrationDate, LblSaveTheDay } from "../../Labels";
+import IPPCelebrantsPresentation from "../../../Interfaces/Components/IPPCelebrantsPresentation";
 
-const PPSaveTheDate: React.FC = () => {
-  return (
-    <CptTranslucentLayer color="secondary">
-      <CptPadding>
-        <Grid2 container columns={{ xs: 4, sm: 8, md: 12 }}>
-          <Grid2 xs={4} sm={8} md={6}>
-            <LblSaveTheDay />
-          </Grid2>
-          <Grid2 xs sm md></Grid2>
-        </Grid2>
-        <Grid2 container columns={{ xs: 4, sm: 8, md: 12 }}>
-          <Grid2 xs={4} sm={8} md={8}>
-            <CptCountdown color="alternate" shape="square" />
-          </Grid2>
-          <Grid2 xs sm md></Grid2>
-        </Grid2>
-        <Grid2 container columns={{ xs: 4, sm: 8, md: 12 }}>
-          <Grid2 xs={4} sm={8} md={6}>
-            <LblCelebrationDate />
-          </Grid2>
-          <Grid2 xs sm md></Grid2>
-        </Grid2>
-      </CptPadding>
-    </CptTranslucentLayer>
-  );
+const LeftContent: React.FC = () => (
+  <>
+    <CptGridContainer>
+      <CptGridLeft>
+        <LblSaveTheDay />
+      </CptGridLeft>
+    </CptGridContainer>
+    <CptGridContainer>
+      <CptGridLeft>
+        <CptCountdown color="alternate" shape="square" />
+      </CptGridLeft>
+    </CptGridContainer>
+    <CptGridContainer>
+      <CptGridLeft>
+        <LblCelebrationDate />
+      </CptGridLeft>
+    </CptGridContainer>
+  </>
+);
+
+const MiddleContent: React.FC = () => (
+  <>
+    <CptGridContainer>
+      <CptGridMiddle>
+        <LblSaveTheDay />
+      </CptGridMiddle>
+    </CptGridContainer>
+    <CptGridContainer>
+      <CptGridMiddle>
+        <CptCountdown color="alternate" shape="square" />
+      </CptGridMiddle>
+    </CptGridContainer>
+    <CptGridContainer>
+      <CptGridMiddle>
+        <LblCelebrationDate />
+      </CptGridMiddle>
+    </CptGridContainer>
+  </>
+);
+
+const RightContent: React.FC = () => (
+  <>
+    <CptGridContainer>
+      <CptGridRight>
+        <LblSaveTheDay />
+      </CptGridRight>
+    </CptGridContainer>
+    <CptGridContainer>
+      <CptGridRight>
+        <CptCountdown color="alternate" shape="square" />
+      </CptGridRight>
+    </CptGridContainer>
+    <CptGridContainer>
+      <CptGridRight>
+        <LblCelebrationDate />
+      </CptGridRight>
+    </CptGridContainer>
+  </>
+);
+
+const PPSaveTheDate: React.FC<IPPCelebrantsPresentation> = ({
+  distribution = "middle",
+}) => {
+  const distributionOptions = {
+    left: <LeftContent />,
+    middle: <MiddleContent />,
+    right: <RightContent />,
+  };
+
+  return <CptPadding>{distributionOptions[distribution]}</CptPadding>;
 };
 
 export default PPSaveTheDate;
