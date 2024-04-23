@@ -6,6 +6,7 @@ import ColorWhiteSand from "./Shared/ColorWhiteSand";
 
 import TypographyColorWhite from "./Shared/TypographyColorWhite";
 import TypographyColorBlack from "./Shared/TypographyColorBlack";
+import TypographyColorGold from "./Shared/TypographyColorGold";
 
 import FontAlexBrush from "./Shared/FontAlexBrush";
 import FontAllura from "./Shared/FontAllura";
@@ -24,6 +25,7 @@ const colors = [
 const typographyStyles = [
   { name: "White", theme: TypographyColorWhite },
   { name: "Black", theme: TypographyColorBlack },
+  { name: "Gold", theme: TypographyColorGold },
 ];
 
 const fonts = [

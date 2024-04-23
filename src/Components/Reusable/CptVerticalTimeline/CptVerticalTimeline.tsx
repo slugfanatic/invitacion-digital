@@ -24,7 +24,11 @@ const CptVerticalTimeline: React.FC<ICptVerticalTimeline> = ({
     return (
       dateOrTime && (
         <TimelineOppositeContent
-          sx={{ margin: "auto 0", textShadow: "0px 0px 5px #000" }}
+          sx={{
+            margin: "auto 0",
+            textShadow: "0px 0px 5px #000",
+            color: (theme: Theme) => theme.palette.text.primary,
+          }}
           variant="body2"
           color="seconday"
         >
