@@ -7,13 +7,13 @@ const TypographyBreakPoints = createTheme({
       "@media (min-width:600px)": {
         fontSize: "5rem",
       },
-      "@media (min-width:960px)": {
+      "@media (min-width:900px)": {
         fontSize: "5.5rem",
       },
-      "@media (min-width:1280px)": {
+      "@media (min-width:1200px)": {
         fontSize: "6rem",
       },
-      "@media (min-width:1920px)": {
+      "@media (min-width:1536px)": {
         fontSize: "7rem",
       },
     },
@@ -22,13 +22,13 @@ const TypographyBreakPoints = createTheme({
       "@media (min-width:600px)": {
         fontSize: "4.5rem",
       },
-      "@media (min-width:960px)": {
+      "@media (min-width:900px)": {
         fontSize: "5rem",
       },
-      "@media (min-width:1280px)": {
+      "@media (min-width:1200px)": {
         fontSize: "5.5rem",
       },
-      "@media (min-width:1920px)": {
+      "@media (min-width:1536px)": {
         fontSize: "6rem",
       },
     },
@@ -37,13 +37,13 @@ const TypographyBreakPoints = createTheme({
       "@media (min-width:600px)": {
         fontSize: "4rem",
       },
-      "@media (min-width:960px)": {
+      "@media (min-width:900px)": {
         fontSize: "4.5rem",
       },
-      "@media (min-width:1280px)": {
+      "@media (min-width:1200px)": {
         fontSize: "5rem",
       },
-      "@media (min-width:1920px)": {
+      "@media (min-width:1536px)": {
         fontSize: "5.5rem",
       },
     },
@@ -52,13 +52,13 @@ const TypographyBreakPoints = createTheme({
       "@media (min-width:600px)": {
         fontSize: "2.5rem",
       },
-      "@media (min-width:960px)": {
+      "@media (min-width:900px)": {
         fontSize: "2.75rem",
       },
-      "@media (min-width:1280px)": {
+      "@media (min-width:1200px)": {
         fontSize: "3rem",
       },
-      "@media (min-width:1920px)": {
+      "@media (min-width:1536px)": {
         fontSize: "3.25rem",
       },
     },
@@ -67,13 +67,13 @@ const TypographyBreakPoints = createTheme({
       "@media (min-width:600px)": {
         fontSize: "2.25rem",
       },
-      "@media (min-width:960px)": {
+      "@media (min-width:900px)": {
         fontSize: "2.5rem",
       },
-      "@media (min-width:1280px)": {
+      "@media (min-width:1200px)": {
         fontSize: "2.75rem",
       },
-      "@media (min-width:1920px)": {
+      "@media (min-width:1536px)": {
         fontSize: "3rem",
       },
     },
@@ -82,13 +82,13 @@ const TypographyBreakPoints = createTheme({
       "@media (min-width:600px)": {
         fontSize: "1.5rem",
       },
-      "@media (min-width:960px)": {
+      "@media (min-width:900px)": {
         fontSize: "1.625rem",
       },
-      "@media (min-width:1280px)": {
+      "@media (min-width:1200px)": {
         fontSize: "1.75rem",
       },
-      "@media (min-width:1920px)": {
+      "@media (min-width:1536px)": {
         fontSize: "1.875rem",
       },
     },
@@ -97,13 +97,13 @@ const TypographyBreakPoints = createTheme({
       "@media (min-width:600px)": {
         fontSize: "1.25rem",
       },
-      "@media (min-width:960px)": {
+      "@media (min-width:900px)": {
         fontSize: "1.375rem",
       },
-      "@media (min-width:1280px)": {
+      "@media (min-width:1200px)": {
         fontSize: "1.5rem",
       },
-      "@media (min-width:1920px)": {
+      "@media (min-width:1536px)": {
         fontSize: "1.625rem",
       },
     },
@@ -112,13 +112,13 @@ const TypographyBreakPoints = createTheme({
       "@media (min-width:600px)": {
         fontSize: "1.125rem",
       },
-      "@media (min-width:960px)": {
+      "@media (min-width:900px)": {
         fontSize: "1.25rem",
       },
-      "@media (min-width:1280px)": {
+      "@media (min-width:1200px)": {
         fontSize: "1.375rem",
       },
-      "@media (min-width:1920px)": {
+      "@media (min-width:1536px)": {
         fontSize: "1.5rem",
       },
     },
@@ -127,13 +127,13 @@ const TypographyBreakPoints = createTheme({
       "@media (min-width:600px)": {
         fontSize: "1.375rem",
       },
-      "@media (min-width:960px)": {
+      "@media (min-width:900px)": {
         fontSize: "1.5rem",
       },
-      "@media (min-width:1280px)": {
+      "@media (min-width:1200px)": {
         fontSize: "1.625rem",
       },
-      "@media (min-width:1920px)": {
+      "@media (min-width:1536px)": {
         fontSize: "1.75rem",
       },
     },
@@ -142,13 +142,13 @@ const TypographyBreakPoints = createTheme({
       "@media (min-width:600px)": {
         fontSize: "1.25rem",
       },
-      "@media (min-width:960px)": {
+      "@media (min-width:900px)": {
         fontSize: "1.375rem",
       },
-      "@media (min-width:1280px)": {
+      "@media (min-width:1200px)": {
         fontSize: "1.5rem",
       },
-      "@media (min-width:1920px)": {
+      "@media (min-width:1536px)": {
         fontSize: "1.625rem",
       },
     },

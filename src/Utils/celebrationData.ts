@@ -117,4 +117,18 @@ export const tresAniosData = {
       iconType: "darkMode",
     },
   ],
+  imageGallery: [
+    {
+      url: require("../assets/images/castillo.jpeg"),
+    },
+    {
+      url: require("../assets/images/pastel_3.jpg"),
+    },
+    {
+      url: require("../assets/images/nubesycielo.jpg"),
+    },
+    {
+      url: require("../assets/images/mesa.jpeg"),
+    },
+  ],
 } as CelebrationInformationType;

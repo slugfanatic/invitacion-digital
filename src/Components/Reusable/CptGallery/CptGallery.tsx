@@ -1,14 +1,23 @@
-import { Stack } from "@mui/material";
-import CptImageHolder from "../CptImageHolder/CptImageHolder";
+import { Stack, Theme, useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
+import { useCelebrationContext } from "../../../Context/CelebrationContext";
+import CptImageHolder from "../CptImageHolder/CptImageHolder";
+import IImageGallery from "../../../Interfaces/Components/IImageGallery";
+import { chunkArray } from "../../../Utils/chunkArray";
 
 const CptGallery: React.FC = (): JSX.Element => {
-  const [ancho, setAncho] = useState(window.innerWidth);
-  const [size, setSize] = useState(0);
+  const {
+    currentCelebrant: { imageGallery },
+  } = useCelebrationContext();
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [columns, setColumns] = useState(1);
+
+  const mdUp = useMediaQuery((theme: Theme) => theme.breakpoints.up("md"));
+  const smUp = useMediaQuery((theme: Theme) => theme.breakpoints.up("sm"));
 
   const actualizarAnchoNavegador = () => {
-    console.log(window.innerWidth);
-    setAncho(window.innerWidth);
+    setWindowWidth(window.innerWidth);
   };
 
   useEffect(() => {
@@ -19,34 +28,33 @@ const CptGallery: React.FC = (): JSX.Element => {
     };
   }, []);
 
-  useEffect(() => {
-    if (ancho && ancho > 0) {
-      setSize(ancho / 4);
-    }
-  }, [ancho]);
+  const groupedImages = chunkArray(imageGallery, columns);
 
-  const images = [
-    {
-      src: require("../../../assets/images/castillo.jpeg"),
-    },
-    {
-      src: require("../../../assets/images/pastel_3.jpg"),
-    },
-    {
-      src: require("../../../assets/images/nubesycielo.jpg"),
-    },
-    {
-      src: require("../../../assets/images/mesa.jpeg"),
-    },
-  ];
+  useEffect(() => {
+    if (mdUp) {
+      setColumns(4);
+    } else if (smUp) {
+      setColumns(2);
+    } else {
+      setColumns(1);
+    }
+  }, [mdUp, smUp]);
 
   return (
-    <Stack direction="row" spacing={0}>
-      {images &&
-        images.map((image, index) => (
-          <CptImageHolder key={index} imageUrl={image.src} size={size} />
+    <>
+      {groupedImages &&
+        groupedImages.map((group, index) => (
+          <Stack key={index} direction="row" spacing={0}>
+            {group.map((image: IImageGallery, idx: number) => (
+              <CptImageHolder
+                key={idx}
+                imageUrl={image.url}
+                size={windowWidth / columns}
+              />
+            ))}
+          </Stack>
         ))}
-    </Stack>
+    </>
   );
 };
 

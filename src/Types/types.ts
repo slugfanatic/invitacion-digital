@@ -1,3 +1,4 @@
+import IImageGallery from "../Interfaces/Components/IImageGallery";
 import ITimeLineEvent from "../Interfaces/Components/ITimeLineEvent";
 
 export type AlignType =
@@ -50,6 +51,7 @@ export type CelebrationInformationType = {
   imageV: UrlType;
   imageB: UrlType;
   events: ITimeLineEvent[];
+  imageGallery?: IImageGallery[];
 };
 
 export type CelebrationContextType = {
