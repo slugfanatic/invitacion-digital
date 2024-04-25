@@ -38,15 +38,17 @@ export type ThemeContextType = {
 
 export type CelebrationType = "¡Nos Casamos!" | "Mis Tres Años";
 
+export type UrlType = string;
+
 export type CelebrationInformationType = {
   celebrantsName: string;
   celebrationType: CelebrationType;
   invitationMessage: string;
   longMessage: string;
   celebrationDate: Date;
-  imageH: string;
-  imageV: string;
-  imageB: string;
+  imageH: UrlType;
+  imageV: UrlType;
+  imageB: UrlType;
   events: ITimeLineEvent[];
 };
 

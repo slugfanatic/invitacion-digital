@@ -3,6 +3,7 @@ import { useCelebrationContext } from "../../Context/CelebrationContext";
 import { tresAniosData } from "../../Utils/celebrationData";
 import {
   CptContainer,
+  CptGallery,
   CptPadding,
   CptTranslucentLayer,
   CptVerticalTimeline,
@@ -45,6 +46,9 @@ const Wedding: React.FC = () => {
         <CptTranslucentLayer color="primary" glass="medium">
           <PPCelebrantsLongMessage />
         </CptTranslucentLayer>
+      </CptContainer>
+      <CptContainer type="full" background="color">
+        <CptGallery />
       </CptContainer>
       <CptContainer type="card" background="pictureB">
         <CptVerticalTimeline position="left" />

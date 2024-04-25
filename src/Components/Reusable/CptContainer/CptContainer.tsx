@@ -45,7 +45,6 @@ const CptContainer: React.FC<ICptContainer> = ({
 
   return (
     <Box
-      className="test"
       sx={{
         margin: marginValues[type],
         ...(background && backgroundValues[background]),

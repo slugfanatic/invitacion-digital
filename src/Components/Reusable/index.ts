@@ -1,6 +1,7 @@
 export { default as CptContainer } from "./CptContainer/CptContainer";
 export { default as CptCountdown } from "./CptCountdown/CptCountdown";
 export { default as CptCountdownTimeItem } from "./CptCountdownTimeItem/CptCountdownTimeItem";
+export { default as CptGallery } from "./CptGallery/CptGallery";
 export {
   CptGridContainer,
   CptGridLeft,
