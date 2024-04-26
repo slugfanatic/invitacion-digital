@@ -8,7 +8,7 @@ const LblLongMessage: React.FC = () => {
   } = useCelebrationContext();
 
   return (
-    <Typography variant="body2" color="text.secondary">
+    <Typography variant="body1" color="text.secondary">
       <CptSplitBr message={longMessage} />
     </Typography>
   );
