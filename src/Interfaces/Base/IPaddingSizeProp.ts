@@ -1,5 +1,7 @@
+import { CptPaddingType } from "../../Types/types";
+
 interface IPaddingSizeProp {
-  pSize?: "small" | "medium" | "big";
+  pSize?: CptPaddingType;
 }
 
 export default IPaddingSizeProp;

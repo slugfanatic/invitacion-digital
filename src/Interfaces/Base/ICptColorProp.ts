@@ -1,5 +1,7 @@
+import { CptColorType } from "../../Types/types";
+
 interface ICptColorProp {
-  color?: "primary" | "secondary";
+  color?: CptColorType;
 }
 
 export default ICptColorProp;

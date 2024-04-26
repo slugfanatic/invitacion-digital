@@ -1,22 +1,7 @@
 import IImageGallery from "../Interfaces/Components/IImageGallery";
 import ITimeLineEvent from "../Interfaces/Components/ITimeLineEvent";
 
-export type AlignType =
-  | "inherit"
-  | "left"
-  | "right"
-  | "center"
-  | "justify"
-  | undefined;
-
-export type BackgroundFillType =
-  | "color"
-  | "alternative"
-  | "pictureH"
-  | "pictureV"
-  | "pictureB";
-
-export type ColorType =
+export type MaterialColorType =
   | "inherit"
   | "primary"
   | "secondary"
@@ -27,9 +12,33 @@ export type ColorType =
   | "warning"
   | undefined;
 
+export type BackgroundFillType =
+  | "color"
+  | "alternative"
+  | "pictureH"
+  | "pictureV"
+  | "pictureB";
+
+export type CptColorType = "primary" | "secondary";
+
 export type PositionType = "left" | "right" | "alternate" | "alternate-reverse";
 
+export type DistributionType = "left" | "right" | "middle";
+
 export type ContainerType = "full" | "margin" | "card";
+
+export type ShapeType = "circle" | "square";
+
+export type GlassType = "lower" | "medium" | "high";
+
+export type CptPaddingType = "small" | "medium" | "big";
+
+export type CptVerticalSizeType =
+  | "xsmall"
+  | "small"
+  | "medium"
+  | "tall"
+  | "xtall";
 
 export type ThemeContextType = {
   currentTheme: string;
@@ -58,5 +67,3 @@ export type CelebrationContextType = {
   currentCelebrant: CelebrationInformationType;
   updateCelebration: (theme: CelebrationInformationType) => void;
 };
-
-export type DistributionType = "left" | "middle" | "right";
