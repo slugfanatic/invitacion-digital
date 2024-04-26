@@ -15,6 +15,11 @@ const CptImageHolder: React.FC<ICptImageHolder> = ({
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
+        filter: "grayscale(80%)",
+        transition: "filter 0.3s ease",
+        "&:hover": {
+          filter: "none",
+        },
       }}
     ></Box>
   );
