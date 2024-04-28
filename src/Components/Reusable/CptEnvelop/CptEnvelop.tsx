@@ -87,7 +87,6 @@ const CptEnvelop: React.FC<ICptEnvelop> = ({ slide }): JSX.Element => {
           <BottomEnvelop />
         </Box>
       </Slide>
-
       <Slide in={slide} direction="down" timeout={{ exit: 5000 }}>
         <Box
           sx={{

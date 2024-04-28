@@ -18,7 +18,6 @@ const CptLoaderButton: React.FC<ICptLoaderButton> = ({
           left: 0,
           right: 0,
           bottom: 0,
-          zIndex: 10003,
         }}
       >
         <Button onClick={onClick}>Click</Button>

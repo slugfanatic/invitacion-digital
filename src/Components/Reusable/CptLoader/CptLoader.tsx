@@ -1,10 +1,17 @@
 import { Box, Fade } from "@mui/material";
-import ICptLoader from "../../../Interfaces/Components/ICptLoader";
+import { useState } from "react";
 import CptEnvelop from "../CptEnvelop/CptEnvelop";
+import CptLoaderButton from "../CptLoaderButton/CptLoaderButton";
 
-const CptLoader: React.FC<ICptLoader> = ({ fade }): JSX.Element => {
+const CptLoader: React.FC = (): JSX.Element => {
+  const [animate, setAnimate] = useState(true);
+
+  const handleClick = () => {
+    setAnimate((prev) => !prev);
+  };
+
   return (
-    <Fade in={fade} timeout={{ exit: 6000 }}>
+    <Fade in={animate} timeout={{ exit: 6000 }}>
       <Box
         sx={{
           height: "100vh",
@@ -17,7 +24,8 @@ const CptLoader: React.FC<ICptLoader> = ({ fade }): JSX.Element => {
           zIndex: 10000,
         }}
       >
-        <CptEnvelop slide={fade} />
+        <CptEnvelop slide={animate} />
+        <CptLoaderButton onClick={handleClick} fade={animate} />
       </Box>
     </Fade>
   );
