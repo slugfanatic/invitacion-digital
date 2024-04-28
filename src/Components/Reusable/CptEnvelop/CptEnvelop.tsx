@@ -29,8 +29,8 @@ const TopEnvelop: React.FC = (): JSX.Element => {
     >
       <defs>
         <linearGradient id="grad" x1="100%" y1="100%" x2="100%" y2="0%">
-          <stop offset="0%" style={{ stopColor: "#fff", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#ddd", stopOpacity: 1 }} />
+          <stop offset="0%" style={{ stopColor: "#ddd", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#fff", stopOpacity: 1 }} />
         </linearGradient>
       </defs>
       <polygon points={points} fill="url(#grad)" fillOpacity="0.6" />
@@ -61,8 +61,8 @@ const BottomEnvelop: React.FC = (): JSX.Element => {
     >
       <defs>
         <linearGradient id="grad" x1="100%" y1="100%" x2="100%" y2="0%">
-          <stop offset="0%" style={{ stopColor: "#ddd", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#fff", stopOpacity: 1 }} />
+          <stop offset="0%" style={{ stopColor: "#fff", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#ddd", stopOpacity: 1 }} />
         </linearGradient>
       </defs>
       <polygon points={points} fill="url(#grad)" fillOpacity="0.8" />
@@ -70,10 +70,10 @@ const BottomEnvelop: React.FC = (): JSX.Element => {
   );
 };
 
-const CptEnvelop: React.FC<ICptEnvelop> = ({ slide }): JSX.Element => {
+const CptEnvelop: React.FC<ICptEnvelop> = ({ slide, time }): JSX.Element => {
   return (
     <>
-      <Slide in={slide} direction="up" timeout={{ exit: 2500 }}>
+      <Slide in={slide} direction="up" timeout={{ exit: time }}>
         <Box
           sx={{
             height: "50vh",
@@ -86,7 +86,7 @@ const CptEnvelop: React.FC<ICptEnvelop> = ({ slide }): JSX.Element => {
           <BottomEnvelop />
         </Box>
       </Slide>
-      <Slide in={slide} direction="down" timeout={{ exit: 2500 }}>
+      <Slide in={slide} direction="down" timeout={{ exit: time }}>
         <Box
           sx={{
             height: "50vh",

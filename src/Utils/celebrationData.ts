@@ -1,7 +1,7 @@
 import { CelebrationInformationType } from "../Types/types";
 
 export const bodaData = {
-  celebrantsName: "Rafaella y Beni",
+  celebrantsName: "Angie y Julio",
   celebrationType: "¡Nos Casamos!",
   invitationMessage:
     "Con gran alegría, les invitamos a celebrar nuestra unión matrimonial.",

@@ -1,8 +1,8 @@
-import { Box, Fade, Slide } from "@mui/material";
 import { useState } from "react";
+import { Box, Fade } from "@mui/material";
 import CptEnvelop from "../CptEnvelop/CptEnvelop";
+import CptEnvelopMessage from "../CptEnvelopMessage/CptEnvelopMessage";
 import CptLoaderButton from "../CptLoaderButton/CptLoaderButton";
-import { LblCelebrants, LblCelebrationName } from "../../Labels";
 
 const CptLoader: React.FC = (): JSX.Element => {
   const [animate, setAnimate] = useState(true);
@@ -23,46 +23,12 @@ const CptLoader: React.FC = (): JSX.Element => {
           left: 0,
           right: 0,
           bottom: 0,
-          zIndex: 10000,
+          zIndex: 999,
         }}
       >
-        <CptEnvelop slide={animate} />
-
-        <Slide in={animate} direction="up" timeout={{ exit: 2500 }}>
-          <Box
-            sx={{
-              height: "50vh",
-              position: "fixed",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              bottom: 0,
-              left: 0,
-              right: 0,
-            }}
-          >
-            <LblCelebrationName />
-          </Box>
-        </Slide>
-
-        <Slide in={animate} direction="down" timeout={{ exit: 2500 }}>
-          <Box
-            sx={{
-              height: "50vh",
-              position: "fixed",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              top: 0,
-              left: 0,
-              right: 0,
-            }}
-          >
-            <LblCelebrants />
-          </Box>
-        </Slide>
-
-        <CptLoaderButton onClick={handleClick} fade={animate} />
+        <CptEnvelop slide={animate} time={2500} />
+        <CptEnvelopMessage slide={animate} time={2500} />
+        <CptLoaderButton onClick={handleClick} fade={animate} time={50} />
       </Box>
     </Fade>
   );

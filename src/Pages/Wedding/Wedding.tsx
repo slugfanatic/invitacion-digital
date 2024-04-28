@@ -3,6 +3,7 @@ import { useCelebrationContext } from "../../Context/CelebrationContext";
 import { bodaData } from "../../Utils/celebrationData";
 import {
   CptContainer,
+  CptLoader,
   CptPadding,
   CptTranslucentLayer,
   CptVerticalTimeline,
@@ -23,6 +24,7 @@ const Wedding: React.FC = () => {
 
   return (
     <CptWrapper>
+      <CptLoader />
       <CptContainer type="full" background="pictureH">
         <CptTranslucentLayer color="secondary" glass="lower">
           <PPCelebrantsPresentation distribution="right" />

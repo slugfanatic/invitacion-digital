@@ -69,3 +69,4 @@ export type CelebrationContextType = {
 };
 
 export type AnimateType = boolean;
+export type TimeOutType = number;

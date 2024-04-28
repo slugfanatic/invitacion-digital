@@ -20,7 +20,7 @@ export const WeddingRoutes: React.FC = () => {
       ),
     },
     {
-      path: "/invitacion-digital/RafaellayBeni",
+      path: "/invitacion-digital/AngieyJulio",
       element: (
         <Suspense>
           <Wedding />

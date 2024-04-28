@@ -4,9 +4,10 @@ import ICptLoaderButton from "../../../Interfaces/Components/ICptLoaderButton";
 const CptLoaderButton: React.FC<ICptLoaderButton> = ({
   onClick,
   fade,
+  time,
 }): JSX.Element => {
   return (
-    <Fade in={fade} timeout={{ exit: 1500 }}>
+    <Fade in={fade} timeout={{ exit: time }}>
       <Box
         sx={{
           height: "100vh",

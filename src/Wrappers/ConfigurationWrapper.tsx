@@ -14,7 +14,7 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
             <Link to="/invitacion-digital/">Inicio</Link>
           </li>
           <li>
-            <Link to="/invitacion-digital/RafaellayBeni">Boda</Link>
+            <Link to="/invitacion-digital/AngieyJulio">Boda</Link>
           </li>
           <li>
             <Link to="/invitacion-digital/wedding">Página de Boda</Link>
