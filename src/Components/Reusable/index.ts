@@ -9,6 +9,7 @@ export {
   CptGridRight,
 } from "./CptGrid/CptGrid";
 export { default as CptImageHolder } from "./CptImageHolder/CptImageHolder";
+export { default as CptLoader } from "./CptLoader/CptLoader";
 export { default as CptPadding } from "./CptPadding/CptPadding";
 export { default as CptSpacer } from "./CptSpacer/CptSpacer";
 export { default as CptSplitBr } from "./CptSplitBr/CptSplitBr";
