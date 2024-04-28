@@ -1,11 +1,15 @@
+import { useState } from "react";
 import { Box, Button, Fade } from "@mui/material";
 import ICptLoaderButton from "../../../Interfaces/Components/ICptLoaderButton";
+import imageSrc from "../../../assets/images/sello.jpg";
 
 const CptLoaderButton: React.FC<ICptLoaderButton> = ({
   onClick,
   fade,
   time,
 }): JSX.Element => {
+  const [hover, setHover] = useState(false);
+
   return (
     <Fade in={fade} timeout={{ exit: time }}>
       <Box
@@ -21,7 +25,20 @@ const CptLoaderButton: React.FC<ICptLoaderButton> = ({
           bottom: 0,
         }}
       >
-        <Button onClick={onClick}>Click</Button>
+        <Button
+          onClick={onClick}
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+          sx={{
+            "&.MuiButton-root": {
+              backgroundImage: `url(${imageSrc})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              width: hover ? "150px" : "100px",
+              height: hover ? "150px" : "100px",
+            },
+          }}
+        />
       </Box>
     </Fade>
   );
