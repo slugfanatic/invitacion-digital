@@ -11,7 +11,7 @@ export const useThemeContext = () =>
 export const ThemeContextProvider: React.FC<IContextProvider> = ({
   children,
 }) => {
-  const [currentTheme, setCurrentTheme] = useState<string>("Alex-Green-B");
+  const [currentTheme, setCurrentTheme] = useState<string>("Allura-Green-G");
   const themeNames = Object.keys(ThemesRecord).sort();
 
   const changeTheme = (theme: string) => {

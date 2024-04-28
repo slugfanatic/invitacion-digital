@@ -1,4 +1,5 @@
 import { Box, Slide } from "@mui/material";
+import { LblCelebrants, LblCelebrationName } from "../../Labels";
 import useWindowResize from "../../../Hooks/useWindowsResize";
 import ICptEnvelop from "../../../Interfaces/Components/ICptEnvelop";
 
@@ -73,30 +74,38 @@ const BottomEnvelop: React.FC = (): JSX.Element => {
 const CptEnvelop: React.FC<ICptEnvelop> = ({ slide }): JSX.Element => {
   return (
     <>
-      <Slide in={slide} direction="up" timeout={{ exit: 5000 }}>
+      <Slide in={slide} direction="up" timeout={{ exit: 2000 }}>
         <Box
           sx={{
+            height: "50vh",
             position: "fixed",
-            top: 0,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            bottom: 0,
             left: 0,
             right: 0,
-            bottom: 0,
           }}
         >
           <BottomEnvelop />
+          <LblCelebrationName />
         </Box>
       </Slide>
-      <Slide in={slide} direction="down" timeout={{ exit: 5000 }}>
+      <Slide in={slide} direction="down" timeout={{ exit: 2000 }}>
         <Box
           sx={{
+            height: "50vh",
             position: "fixed",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
             top: 0,
             left: 0,
             right: 0,
-            bottom: 0,
           }}
         >
           <TopEnvelop />
+          <LblCelebrants />
         </Box>
       </Slide>
     </>

@@ -11,7 +11,7 @@ const CptLoader: React.FC = (): JSX.Element => {
   };
 
   return (
-    <Fade in={animate} timeout={{ exit: 6000 }}>
+    <Fade in={animate} timeout={{ exit: 2500 }}>
       <Box
         sx={{
           height: "100vh",
