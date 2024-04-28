@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Box, Slide, Slider, Zoom } from "@mui/material";
+import { Box, Slide } from "@mui/material";
 import useWindowResize from "../../../Hooks/useWindowsResize";
 import ICptEnvelop from "../../../Interfaces/Components/ICptEnvelop";
 
