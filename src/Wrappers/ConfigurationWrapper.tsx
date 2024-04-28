@@ -4,7 +4,7 @@ import { useThemeContext } from "../Context/ThemeContext";
 import { Link } from "react-router-dom";
 
 export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
-  const { changeTheme, themeNames } = useThemeContext();
+  const { currentTheme, changeTheme, themeNames } = useThemeContext();
 
   return (
     <>
@@ -26,7 +26,10 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
       </nav>
 
       <div>
-        <select onChange={(e) => changeTheme(e.target.value)}>
+        <select
+          onChange={(e) => changeTheme(e.target.value)}
+          value={currentTheme}
+        >
           {themeNames.map((theme) => (
             <option key={theme} value={theme}>
               {theme}
