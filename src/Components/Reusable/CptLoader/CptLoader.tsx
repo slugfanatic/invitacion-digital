@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Button, Fade } from "@mui/material";
+import { Box, Button, Fade, Slide } from "@mui/material";
 import useWindowResize from "../../../Hooks/useWindowsResize";
 
 const TopEnvelop: React.FC = (): JSX.Element => {
@@ -90,8 +90,24 @@ const CptLoader: React.FC = (): JSX.Element => {
           zIndex: 10000,
         }}
       >
-        <BottomEnvelop />
-        <TopEnvelop />
+        <Slide
+          direction="down"
+          in={fade}
+          timeout={{ exit: 500 }}
+          mountOnEnter
+          unmountOnExit
+        >
+          <BottomEnvelop />
+        </Slide>
+        <Slide
+          direction="up"
+          in={fade}
+          timeout={{ exit: 500 }}
+          mountOnEnter
+          unmountOnExit
+        >
+          <TopEnvelop />
+        </Slide>
         <Button onClick={() => setFade((prev) => !prev)}>Click</Button>
       </Box>
     </Fade>
