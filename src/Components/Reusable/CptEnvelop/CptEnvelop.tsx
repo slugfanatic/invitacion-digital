@@ -1,19 +1,21 @@
 import { Box, Slide } from "@mui/material";
 import useWindowResize from "../../../Hooks/useWindowsResize";
+import useBreakpoints from "../../../Hooks/useBreakpoints";
 import ICptEnvelop from "../../../Interfaces/Components/ICptEnvelop";
 
 const TopEnvelop: React.FC = (): JSX.Element => {
   const { screenWidth, screenHeight } = useWindowResize();
+  const { mdUp } = useBreakpoints();
   const svgHeight = screenHeight * 0.6;
 
   const points =
     `0,0` +
     ` ` +
-    `0,${svgHeight * 0.4}` +
+    `0,${svgHeight * (mdUp ? 0.4 : 0.7)}` +
     ` ` +
     `${screenWidth * 0.5},${svgHeight}` +
     ` ` +
-    `${screenWidth},${svgHeight * 0.4}` +
+    `${screenWidth},${svgHeight * (mdUp ? 0.4 : 0.7)}` +
     ` ` +
     `${screenWidth},${0}`;
 
@@ -40,14 +42,24 @@ const TopEnvelop: React.FC = (): JSX.Element => {
 
 const BottomEnvelop: React.FC = (): JSX.Element => {
   const { screenWidth, screenHeight } = useWindowResize();
+  const { mdUp } = useBreakpoints();
   const svgHeight = screenHeight * 0.65;
 
-  const points =
-    `0,${svgHeight}` +
-    ` ` +
-    `${screenWidth * 0.5},0` +
-    ` ` +
-    `${screenWidth},${svgHeight}`;
+  const points = mdUp
+    ? `0,${svgHeight}` +
+      ` ` +
+      `${screenWidth * 0.5},0` +
+      ` ` +
+      `${screenWidth},${svgHeight}`
+    : `0,${svgHeight}` +
+      ` ` +
+      `0,${svgHeight * 0.6}` +
+      ` ` +
+      `${screenWidth * 0.5},0` +
+      ` ` +
+      `${screenWidth},${svgHeight * 0.6}` +
+      ` ` +
+      `${screenWidth},${svgHeight}`;
 
   return (
     <svg
