@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Box, Button, Fade } from "@mui/material";
+import useWindowResize from "../../../Hooks/useWindowsResize";
 
 const TopEnvelop: React.FC = (): JSX.Element => {
-  const screenWidth = window.innerWidth;
-  const svgHeight = window.innerHeight * 0.6;
+  const { screenWidth, screenHeight } = useWindowResize();
+  const svgHeight = screenHeight * 0.6;
 
   const points =
     `0,0` +
@@ -38,8 +39,8 @@ const TopEnvelop: React.FC = (): JSX.Element => {
 };
 
 const BottomEnvelop: React.FC = (): JSX.Element => {
-  const screenWidth = window.innerWidth;
-  const svgHeight = window.innerHeight * 0.65;
+  const { screenWidth, screenHeight } = useWindowResize();
+  const svgHeight = screenHeight * 0.65;
 
   const points =
     `0,${svgHeight}` +

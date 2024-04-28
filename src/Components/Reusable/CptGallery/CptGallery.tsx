@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Stack } from "@mui/material";
 import { useCelebrationContext } from "../../../Context/CelebrationContext";
 import useBreakpoints from "../../../Hooks/useBreakpoints";
+import useWindowResize from "../../../Hooks/useWindowsResize";
 import CptImageHolder from "../CptImageHolder/CptImageHolder";
 import IImageGallery from "../../../Interfaces/Components/IImageGallery";
 import { chunkArray } from "../../../Utils/chunkArray";
@@ -11,20 +12,8 @@ const CptGallery: React.FC = (): JSX.Element => {
     currentCelebrant: { imageGallery },
   } = useCelebrationContext();
   const { smUp, mdUp } = useBreakpoints();
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const { screenWidth } = useWindowResize();
   const [columns, setColumns] = useState(1);
-
-  const actualizarAnchoNavegador = () => {
-    setWindowWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", actualizarAnchoNavegador);
-
-    return () => {
-      window.removeEventListener("resize", actualizarAnchoNavegador);
-    };
-  }, []);
 
   const groupedImages = chunkArray(imageGallery, columns);
 
@@ -47,7 +36,7 @@ const CptGallery: React.FC = (): JSX.Element => {
               <CptImageHolder
                 key={idx}
                 imageUrl={image.url}
-                size={windowWidth / columns}
+                size={screenWidth / columns}
               />
             ))}
           </Stack>
