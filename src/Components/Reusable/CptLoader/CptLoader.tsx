@@ -1,7 +1,8 @@
-import { Box, Fade } from "@mui/material";
+import { Box, Fade, Slide } from "@mui/material";
 import { useState } from "react";
 import CptEnvelop from "../CptEnvelop/CptEnvelop";
 import CptLoaderButton from "../CptLoaderButton/CptLoaderButton";
+import { LblCelebrants, LblCelebrationName } from "../../Labels";
 
 const CptLoader: React.FC = (): JSX.Element => {
   const [animate, setAnimate] = useState(true);
@@ -11,11 +12,12 @@ const CptLoader: React.FC = (): JSX.Element => {
   };
 
   return (
-    <Fade in={animate} timeout={{ exit: 2500 }}>
+    <Fade in={animate} timeout={{ exit: 3000 }}>
       <Box
         sx={{
           height: "100vh",
-          backgroundColor: "white",
+          background:
+            "radial-gradient(circle, rgba(192,192,192,1) 5%, rgba(255,255,255,1) 80%)",
           position: "fixed",
           top: 0,
           left: 0,
@@ -25,6 +27,41 @@ const CptLoader: React.FC = (): JSX.Element => {
         }}
       >
         <CptEnvelop slide={animate} />
+
+        <Slide in={animate} direction="up" timeout={{ exit: 2500 }}>
+          <Box
+            sx={{
+              height: "50vh",
+              position: "fixed",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              bottom: 0,
+              left: 0,
+              right: 0,
+            }}
+          >
+            <LblCelebrationName />
+          </Box>
+        </Slide>
+
+        <Slide in={animate} direction="down" timeout={{ exit: 2500 }}>
+          <Box
+            sx={{
+              height: "50vh",
+              position: "fixed",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              top: 0,
+              left: 0,
+              right: 0,
+            }}
+          >
+            <LblCelebrants />
+          </Box>
+        </Slide>
+
         <CptLoaderButton onClick={handleClick} fade={animate} />
       </Box>
     </Fade>
