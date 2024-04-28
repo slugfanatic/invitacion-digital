@@ -67,3 +67,5 @@ export type CelebrationContextType = {
   currentCelebrant: CelebrationInformationType;
   updateCelebration: (theme: CelebrationInformationType) => void;
 };
+
+export type AnimateType = boolean;

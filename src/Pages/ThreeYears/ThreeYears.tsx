@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useCelebrationContext } from "../../Context/CelebrationContext";
 import { tresAniosData } from "../../Utils/celebrationData";
 import {
@@ -16,9 +16,16 @@ import {
   PPSaveTheDate,
 } from "../../Components/PageParts";
 import { LblCelebrantsInvitationMessage } from "../../Components/Labels";
+import CptLoaderButton from "../../Components/Reusable/CptLoaderButton/CptLoaderButton";
 
 const Wedding: React.FC = () => {
   const { updateCelebration } = useCelebrationContext();
+
+  const [animate, setAnimate] = useState(true);
+
+  const handleClick = () => {
+    setAnimate((prev) => !prev);
+  };
 
   useEffect(() => {
     updateCelebration(tresAniosData);
@@ -26,7 +33,8 @@ const Wedding: React.FC = () => {
 
   return (
     <>
-      <CptLoader />
+      <CptLoader fade={animate} />
+      <CptLoaderButton onClick={handleClick} fade={animate} />
       <CptWrapper>
         <CptContainer type="full" background="pictureH">
           <CptTranslucentLayer glass="lower">

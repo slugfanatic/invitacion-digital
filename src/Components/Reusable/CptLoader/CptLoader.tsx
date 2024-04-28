@@ -1,97 +1,13 @@
-import { useState } from "react";
-import { Box, Button, Fade } from "@mui/material";
-import useWindowResize from "../../../Hooks/useWindowsResize";
+import { Box, Fade } from "@mui/material";
+import ICptLoader from "../../../Interfaces/Components/ICptLoader";
+import CptEnvelop from "../CptEnvelop/CptEnvelop";
 
-const TopEnvelop: React.FC = (): JSX.Element => {
-  const { screenWidth, screenHeight } = useWindowResize();
-  const svgHeight = screenHeight * 0.6;
-
-  const points =
-    `0,0` +
-    ` ` +
-    `0,${svgHeight * 0.4}` +
-    ` ` +
-    `${screenWidth * 0.5},${svgHeight}` +
-    ` ` +
-    `${screenWidth},${svgHeight * 0.4}` +
-    ` ` +
-    `${screenWidth},${0}`;
-
+const CptLoader: React.FC<ICptLoader> = ({ fade }): JSX.Element => {
   return (
-    <svg
-      width={screenWidth}
-      height={svgHeight}
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-      }}
-    >
-      <defs>
-        <linearGradient id="grad" x1="100%" y1="100%" x2="100%" y2="0%">
-          <stop offset="0%" style={{ stopColor: "#fff", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#ddd", stopOpacity: 1 }} />
-        </linearGradient>
-      </defs>
-      <polygon points={points} fill="url(#grad)" fillOpacity="0.6" />
-    </svg>
-  );
-};
-
-const BottomEnvelop: React.FC = (): JSX.Element => {
-  const { screenWidth, screenHeight } = useWindowResize();
-  const svgHeight = screenHeight * 0.65;
-
-  const points =
-    `0,${svgHeight}` +
-    ` ` +
-    `${screenWidth * 0.5},0` +
-    ` ` +
-    `${screenWidth},${svgHeight}`;
-
-  return (
-    <svg
-      width={screenWidth}
-      height={svgHeight}
-      style={{
-        position: "fixed",
-        bottom: 0,
-        left: 0,
-      }}
-    >
-      <defs>
-        <linearGradient id="grad" x1="100%" y1="100%" x2="100%" y2="0%">
-          <stop offset="0%" style={{ stopColor: "#ddd", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#fff", stopOpacity: 1 }} />
-        </linearGradient>
-      </defs>
-      <polygon points={points} fill="url(#grad)" fillOpacity="0.8" />
-    </svg>
-  );
-};
-
-const CptEnvelop: React.FC = (): JSX.Element => {
-  const [slide, setSlide] = useState(true);
-
-  return (
-    <>
-      <BottomEnvelop />
-      <TopEnvelop />
-    </>
-  );
-};
-
-const CptLoader: React.FC = (): JSX.Element => {
-  const [fade, setFade] = useState(true);
-
-  return (
-    <Fade in={fade} timeout={{ exit: 1500 }}>
+    <Fade in={fade} timeout={{ exit: 6000 }}>
       <Box
         sx={{
           height: "100vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
           backgroundColor: "white",
           position: "fixed",
           top: 0,
@@ -101,8 +17,7 @@ const CptLoader: React.FC = (): JSX.Element => {
           zIndex: 10000,
         }}
       >
-        <CptEnvelop />
-        <Button onClick={() => setFade((prev) => !prev)}>Click</Button>
+        <CptEnvelop slide={fade} />
       </Box>
     </Fade>
   );

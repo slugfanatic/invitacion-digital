@@ -7,6 +7,8 @@ import {
   Collapse,
   FormControlLabel,
   Switch,
+  Slide,
+  Fade,
 } from "@mui/material";
 import "./Sobre.css"; // Archivo CSS para estilos y animaciones
 
@@ -78,6 +80,21 @@ const PruebaSobre: React.FC = () => {
           control={<Switch checked={checked} onChange={handleChange} />}
           label="Show"
         />
+
+        <Fade in={checked} timeout={{ exit: 5000 }}>
+          <div>
+            <Slide
+              direction="up"
+              in={checked}
+              timeout={{ exit: 3000 }}
+              mountOnEnter
+              unmountOnExit
+            >
+              <div>Hola</div>
+            </Slide>
+          </div>
+        </Fade>
+
         <Box
           sx={{
             "& > :not(style)": {
