@@ -1,0 +1,2 @@
+.sobre,.sobre-container{position:relative}.sobre{height:100px;perspective:1000px;width:200px}.sobre-contenido{-webkit-backface-visibility:hidden;backface-visibility:hidden;height:100%}.sobre-contenido,.sobre-tapa{background-color:#f0f0f0;position:absolute;width:100%}.sobre-tapa{height:50%;left:0;top:0;transform-origin:bottom;transition:transform .5s ease}.sobre.abierto .sobre-tapa{transform:rotateX(-180deg)}
+/*# sourceMappingURL=218.c5e2214b.chunk.css.map*/
