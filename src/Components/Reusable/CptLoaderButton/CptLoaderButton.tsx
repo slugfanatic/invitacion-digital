@@ -34,8 +34,9 @@ const CptLoaderButton: React.FC<ICptLoaderButton> = ({
               backgroundImage: `url(${imageSrc})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
-              width: hover ? "150px" : "100px",
-              height: hover ? "150px" : "100px",
+              width: hover ? "220px" : "190px",
+              height: hover ? "220px" : "190px",
+              transition: "width 0.3s ease, height 0.3s ease",
             },
           }}
         />
