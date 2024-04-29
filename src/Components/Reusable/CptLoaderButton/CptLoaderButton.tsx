@@ -5,6 +5,7 @@ import red from "../../../assets/images/wax_red.png";
 import redW from "../../../assets/images/wax_red_w.png";
 import gold from "../../../assets/images/wax_gold.png";
 import { useCelebrationContext } from "../../../Context/CelebrationContext";
+import useBreakpoints from "../../../Hooks/useBreakpoints";
 
 const CptLoaderButton: React.FC<ICptLoaderButton> = ({
   onClick,
@@ -14,7 +15,10 @@ const CptLoaderButton: React.FC<ICptLoaderButton> = ({
   const {
     currentCelebrant: { wax },
   } = useCelebrationContext();
+  const { mdUp } = useBreakpoints();
   const [hover, setHover] = useState(false);
+
+  const size = mdUp ? 220 : 165;
 
   const waxValues = {
     red: red,
@@ -46,8 +50,8 @@ const CptLoaderButton: React.FC<ICptLoaderButton> = ({
               backgroundImage: `url(${wax && waxValues[wax]})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
-              width: hover ? "210px" : "160px",
-              height: hover ? "210px" : "160px",
+              width: hover ? `${size * 1.2}px` : `${size}px`,
+              height: hover ? `${size * 1.2}px` : `${size}px`,
               backgroundColor: "unset",
               boxShadow: "none",
               transition: "width 0.3s ease, height 0.3s ease",
