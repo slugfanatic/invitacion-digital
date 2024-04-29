@@ -13,7 +13,7 @@ const TopEnvelop: React.FC = (): JSX.Element => {
     ` ` +
     `0,${svgHeight * (mdUp ? 0.4 : 0.7)}` +
     ` ` +
-    `${screenWidth * 0.5},${svgHeight}` +
+    `${screenWidth * 0.5},${svgHeight * 0.9}` +
     ` ` +
     `${screenWidth},${svgHeight * (mdUp ? 0.4 : 0.7)}` +
     ` ` +
@@ -48,14 +48,14 @@ const BottomEnvelop: React.FC = (): JSX.Element => {
   const points = mdUp
     ? `0,${svgHeight}` +
       ` ` +
-      `${screenWidth * 0.5},0` +
+      `${screenWidth * 0.5},40` +
       ` ` +
       `${screenWidth},${svgHeight}`
     : `0,${svgHeight}` +
       ` ` +
       `0,${svgHeight * 0.6}` +
       ` ` +
-      `${screenWidth * 0.5},0` +
+      `${screenWidth * 0.5},60` +
       ` ` +
       `${screenWidth},${svgHeight * 0.6}` +
       ` ` +
