@@ -1,6 +1,7 @@
 import { CelebrationInformationType } from "../Types/types";
 
 export const bodaData = {
+  wax: "redW",
   celebrantsName: "Angie y Julio",
   celebrationType: "¡Nos Casamos!",
   invitationMessage:
@@ -55,6 +56,7 @@ export const bodaData = {
 } as CelebrationInformationType;
 
 export const tresAniosData = {
+  wax: "gold",
   celebrantsName: "Rafaella",
   celebrationType: "Mis Tres Años",
   invitationMessage:

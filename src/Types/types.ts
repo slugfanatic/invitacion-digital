@@ -50,6 +50,8 @@ export type CelebrationType = "¡Nos Casamos!" | "Mis Tres Años";
 
 export type UrlType = string;
 
+export type WaxType = "red" | "redW" | "gold";
+
 export type CelebrationInformationType = {
   celebrantsName: string;
   celebrationType: CelebrationType;
@@ -61,6 +63,7 @@ export type CelebrationInformationType = {
   imageB: UrlType;
   events: ITimeLineEvent[];
   imageGallery?: IImageGallery[];
+  wax?: WaxType;
 };
 
 export type CelebrationContextType = {
