@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Button, Fade } from "@mui/material";
 import ICptLoaderButton from "../../../Interfaces/Components/ICptLoaderButton";
-import imageSrc from "../../../assets/images/sello.jpg";
+import imageSrc from "../../../assets/images/wax_red.png";
 
 const CptLoaderButton: React.FC<ICptLoaderButton> = ({
   onClick,
@@ -36,7 +36,13 @@ const CptLoaderButton: React.FC<ICptLoaderButton> = ({
               backgroundSize: "cover",
               width: hover ? "210px" : "160px",
               height: hover ? "210px" : "160px",
+              backgroundColor: "unset",
+              boxShadow: "none",
               transition: "width 0.3s ease, height 0.3s ease",
+              "&:hover": {
+                backgroundColor: "unset",
+                boxShadow: "none",
+              },
             },
           }}
         />
