@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Box, Fade } from "@mui/material";
+import { scrollToTop } from "../../../Utils/scrollToTop";
 import CptEnvelop from "../CptEnvelop/CptEnvelop";
 import CptEnvelopMessage from "../CptEnvelopMessage/CptEnvelopMessage";
 import CptLoaderButton from "../CptLoaderButton/CptLoaderButton";
@@ -8,6 +9,7 @@ const CptLoader: React.FC = (): JSX.Element => {
   const [animate, setAnimate] = useState(true);
 
   const handleClick = () => {
+    scrollToTop();
     setAnimate((prev) => !prev);
   };
 
