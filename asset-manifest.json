@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/invitacion-digital/static/css/main.2b9f15dd.css",
-    "main.js": "/invitacion-digital/static/js/main.488eee25.js",
+    "main.js": "/invitacion-digital/static/js/main.eb1bec42.js",
     "static/js/453.1e2eb5f2.chunk.js": "/invitacion-digital/static/js/453.1e2eb5f2.chunk.js",
     "static/css/218.c5e2214b.chunk.css": "/invitacion-digital/static/css/218.c5e2214b.chunk.css",
     "static/js/218.387e0e75.chunk.js": "/invitacion-digital/static/js/218.387e0e75.chunk.js",
@@ -15,7 +15,7 @@
     "static/js/697.6e976ebf.chunk.js": "/invitacion-digital/static/js/697.6e976ebf.chunk.js",
     "static/js/307.71fb0679.chunk.js": "/invitacion-digital/static/js/307.71fb0679.chunk.js",
     "static/js/452.a30d59e1.chunk.js": "/invitacion-digital/static/js/452.a30d59e1.chunk.js",
-    "static/js/326.d8900d96.chunk.js": "/invitacion-digital/static/js/326.d8900d96.chunk.js",
+    "static/js/326.b812cbcc.chunk.js": "/invitacion-digital/static/js/326.b812cbcc.chunk.js",
     "static/media/wax_red.png": "/invitacion-digital/static/media/wax_red.e36ccd6bd4cabf52973a.png",
     "static/media/wax_red_w.png": "/invitacion-digital/static/media/wax_red_w.4bcc1a033f183097884f.png",
     "static/media/Horizontal.jpeg": "/invitacion-digital/static/media/Horizontal.52ff392fc8724c2ad13d.jpeg",
@@ -43,7 +43,7 @@
     "static/media/Sofia-Regular.otf": "/invitacion-digital/static/media/Sofia-Regular.e2dee251fd62f4f4bc0b.otf",
     "index.html": "/invitacion-digital/index.html",
     "main.2b9f15dd.css.map": "/invitacion-digital/static/css/main.2b9f15dd.css.map",
-    "main.488eee25.js.map": "/invitacion-digital/static/js/main.488eee25.js.map",
+    "main.eb1bec42.js.map": "/invitacion-digital/static/js/main.eb1bec42.js.map",
     "453.1e2eb5f2.chunk.js.map": "/invitacion-digital/static/js/453.1e2eb5f2.chunk.js.map",
     "218.c5e2214b.chunk.css.map": "/invitacion-digital/static/css/218.c5e2214b.chunk.css.map",
     "218.387e0e75.chunk.js.map": "/invitacion-digital/static/js/218.387e0e75.chunk.js.map",
@@ -57,10 +57,10 @@
     "697.6e976ebf.chunk.js.map": "/invitacion-digital/static/js/697.6e976ebf.chunk.js.map",
     "307.71fb0679.chunk.js.map": "/invitacion-digital/static/js/307.71fb0679.chunk.js.map",
     "452.a30d59e1.chunk.js.map": "/invitacion-digital/static/js/452.a30d59e1.chunk.js.map",
-    "326.d8900d96.chunk.js.map": "/invitacion-digital/static/js/326.d8900d96.chunk.js.map"
+    "326.b812cbcc.chunk.js.map": "/invitacion-digital/static/js/326.b812cbcc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b9f15dd.css",
-    "static/js/main.488eee25.js"
+    "static/js/main.eb1bec42.js"
   ]
 }
