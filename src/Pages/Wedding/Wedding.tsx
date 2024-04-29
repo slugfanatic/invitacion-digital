@@ -23,30 +23,32 @@ const Wedding: React.FC = () => {
   }, []);
 
   return (
-    <CptWrapper>
+    <>
       <CptLoader />
-      <CptContainer type="full" background="pictureH">
-        <CptTranslucentLayer color="secondary" glass="lower">
-          <PPCelebrantsPresentation distribution="right" />
-        </CptTranslucentLayer>
-      </CptContainer>
-      <CptContainer type="margin" background="alternative">
-        <CptPadding>
-          <LblCelebrantsInvitationMessage />
-        </CptPadding>
-      </CptContainer>
-      <CptContainer type="margin" background="pictureH">
-        <CptTranslucentLayer color="secondary" glass="high">
-          <PPSaveTheDate distribution="left" />
-        </CptTranslucentLayer>
-      </CptContainer>
-      <CptContainer type="card" background="alternative">
-        <PPCelebrantsLongMessage />
-      </CptContainer>
-      <CptContainer type="card">
-        <CptVerticalTimeline />
-      </CptContainer>
-    </CptWrapper>
+      <CptWrapper>
+        <CptContainer type="full" background="pictureH">
+          <CptTranslucentLayer color="secondary" glass="lower">
+            <PPCelebrantsPresentation distribution="right" />
+          </CptTranslucentLayer>
+        </CptContainer>
+        <CptContainer type="margin" background="alternative">
+          <CptPadding>
+            <LblCelebrantsInvitationMessage />
+          </CptPadding>
+        </CptContainer>
+        <CptContainer type="margin" background="pictureH">
+          <CptTranslucentLayer color="secondary" glass="high">
+            <PPSaveTheDate distribution="left" />
+          </CptTranslucentLayer>
+        </CptContainer>
+        <CptContainer type="margin" background="alternative">
+          <PPCelebrantsLongMessage />
+        </CptContainer>
+        <CptContainer type="card">
+          <CptVerticalTimeline />
+        </CptContainer>
+      </CptWrapper>
+    </>
   );
 };
 

@@ -45,7 +45,7 @@ const Wedding: React.FC = () => {
             <PPSaveTheDate distribution="middle" />
           </CptTranslucentLayer>
         </CptContainer>
-        <CptContainer type="card" background="pictureB">
+        <CptContainer type="margin" background="pictureB">
           <CptTranslucentLayer color="primary" glass="medium">
             <PPCelebrantsLongMessage />
           </CptTranslucentLayer>
