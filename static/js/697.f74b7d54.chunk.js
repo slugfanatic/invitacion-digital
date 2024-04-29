@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkinvitacion_digital=self.webpackChunkinvitacion_digital||[]).push([[697],{1439:(i,t,n)=>{n.r(t),n.d(t,{default:()=>c});var s=n(7264),a=n(3655),e=n(579);const c=()=>(0,e.jsx)(s.vT,{children:(0,e.jsx)(a.GU,{distribution:"left"})})}}]);
+//# sourceMappingURL=697.f74b7d54.chunk.js.map
