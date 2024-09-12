@@ -10,65 +10,27 @@ import {
 } from "@mui/lab";
 import { Paper, Theme, Typography } from "@mui/material";
 import IconMapper from "../IconMapper/IconMapper";
+import { useCelebrationContext } from "../../../Context/CelebrationContext";
+import ICptVerticalTimeline from "../../../Interfaces/Components/ICptVerticalTimeline";
 
-interface TimelineEvent {
-  dateOrTime: string;
-  title: string;
-  description: string;
-  iconFinder: string;
-}
-
-interface VerticalTimelineProps {
-  events: TimelineEvent[];
-}
-
-const CptVerticalTimeline: React.FC = () => {
-  var events = [
-    {
-      dateOrTime: "1:30 - 2:00 PM",
-      title: "Recepción",
-      description: "",
-      iconType: "festival",
-    },
-    {
-      dateOrTime: "2:00 - 3:00 PM",
-      title: "Ceremonia",
-      description: "Religiosa y Civil",
-      iconType: "festival",
-    },
-    {
-      dateOrTime: "3:00 - 4:00 PM",
-      title: "Cocktail",
-      description: "",
-      iconType: "festival",
-    },
-    {
-      dateOrTime: "4:10 - 5:10 PM",
-      title: "Banquete",
-      description: "",
-      iconType: "festival",
-    },
-    {
-      dateOrTime: "5:10 - 11:30 PM",
-      title: "Fiesta",
-      description: "",
-      iconType: "festival",
-    },
-    {
-      dateOrTime: "",
-      title: "Tornaboda",
-      description: "",
-      iconType: "",
-    },
-  ];
+const CptVerticalTimeline: React.FC<ICptVerticalTimeline> = ({
+  position = "alternate",
+}) => {
+  const {
+    currentCelebrant: { events },
+  } = useCelebrationContext();
 
   const cptTimelineOppositeContent = (dateOrTime: string | undefined) => {
     return (
       dateOrTime && (
         <TimelineOppositeContent
-          sx={{ margin: "auto 0", textShadow: "0px 0px 5px #000" }}
+          sx={{
+            margin: "auto 0",
+            textShadow: "0px 0px 5px #000",
+            color: (theme: Theme) => theme.palette.text.primary,
+          }}
           variant="body2"
-          color="text.primary"
+          color="seconday"
         >
           {dateOrTime}
         </TimelineOppositeContent>
@@ -80,11 +42,11 @@ const CptVerticalTimeline: React.FC = () => {
     return (
       <TimelineSeparator>
         {events[index].iconType ? (
-          <TimelineDot color="secondary" variant="outlined">
+          <TimelineDot color="primary" variant="outlined">
             {IconMapper(events[index].iconType)}
           </TimelineDot>
         ) : (
-          <TimelineDot color="secondary" variant="filled" />
+          <TimelineDot color="primary" variant="filled" />
         )}
         {index < events.length - 1 && <TimelineConnector />}
       </TimelineSeparator>
@@ -110,7 +72,7 @@ const CptVerticalTimeline: React.FC = () => {
   };
 
   return (
-    <Timeline position="alternate">
+    <Timeline position={position}>
       {events.map((event, index) => (
         <TimelineItem key={index}>
           {cptTimelineOppositeContent(event.dateOrTime)}

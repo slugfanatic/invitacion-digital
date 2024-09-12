@@ -1,5 +1,7 @@
+import { GlassType } from "../../Types/types";
+
 interface IGlassProp {
-  glass?: "lower" | "medium" | "high";
+  glass?: GlassType;
 }
 
 export default IGlassProp;

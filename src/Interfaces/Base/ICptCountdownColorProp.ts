@@ -1,5 +1,7 @@
+import { CptColorType } from "../../Types/types";
+
 interface ICptCountdownColorProp {
-  color: "primary" | "secondary" | "alternate";
+  color: CptColorType | "alternate";
 }
 
 export default ICptCountdownColorProp;

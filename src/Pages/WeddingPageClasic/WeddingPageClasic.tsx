@@ -5,8 +5,7 @@ import "./WeddingPageClasic.scss";
 const WeddingPageClasic: React.FC = () => {
   return (
     <CptWrapper>
-      <PPCelebrantsPresentation />
-      <PPCelebrantsPresentation />
+      <PPCelebrantsPresentation distribution="left" />
     </CptWrapper>
   );
 };

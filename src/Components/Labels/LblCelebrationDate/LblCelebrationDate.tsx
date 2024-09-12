@@ -1,10 +1,15 @@
 import { Typography } from "@mui/material";
 import { formatDate } from "../../../Utils/formatDate";
+import { useCelebrationContext } from "../../../Context/CelebrationContext";
 
 const LblCelebrationDate: React.FC = () => {
+  const {
+    currentCelebrant: { celebrationDate },
+  } = useCelebrationContext();
+
   return (
     <Typography variant="h4" color="text.primary">
-      {formatDate(new Date("2024-06-08 13:30:00"))}
+      {formatDate(celebrationDate)}
     </Typography>
   );
 };

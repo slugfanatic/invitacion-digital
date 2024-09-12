@@ -1,7 +1,8 @@
-import { ColorType } from "../../Types/types";
+import { MaterialColorType } from "../../Types/types";
 
+// If necesary
 interface IColorProp {
-  color?: ColorType;
+  color?: MaterialColorType;
 }
 
 export default IColorProp;

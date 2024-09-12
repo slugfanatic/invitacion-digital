@@ -1,5 +1,7 @@
+import { CptVerticalSizeType } from "../../Types/types";
+
 interface IVerticalSizeProp {
-  vSize?: "xsmall" | "small" | "medium" | "tall" | "xtall";
+  vSize?: CptVerticalSizeType;
 }
 
 export default IVerticalSizeProp;

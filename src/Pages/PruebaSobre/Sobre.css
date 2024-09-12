@@ -1,0 +1,33 @@
+.sobre-container {
+  position: relative;
+}
+
+.sobre {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  perspective: 1000px; /* Establece la perspectiva para las transformaciones 3D */
+}
+
+.sobre-contenido {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  backface-visibility: hidden; /* Oculta la cara posterior durante la animación */
+}
+
+.sobre-tapa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #f0f0f0;
+  transform-origin: bottom; /* Define el punto de origen para la rotación */
+  transition: transform 0.5s ease; /* Agrega una transición suave */
+}
+
+.sobre.abierto .sobre-tapa {
+  transform: rotateX(-180deg); /* Rota la tapa hacia atrás */
+}

@@ -1,49 +1,54 @@
+import { useEffect } from "react";
+import { useCelebrationContext } from "../../Context/CelebrationContext";
+import { bodaData } from "../../Utils/celebrationData";
 import {
   CptContainer,
+  CptLoader,
   CptPadding,
   CptTranslucentLayer,
+  CptVerticalTimeline,
   CptWrapper,
 } from "../../Components/Reusable";
 import {
   PPCelebrantsLongMessage,
   PPCelebrantsPresentation,
   PPSaveTheDate,
-  PPVerticalTimeLine,
 } from "../../Components/PageParts";
 import { LblCelebrantsInvitationMessage } from "../../Components/Labels";
-import { useThemeContext } from "../../Context/ThemeContext";
 
 const Wedding: React.FC = () => {
-  const { changeTheme } = useThemeContext();
+  const { updateCelebration } = useCelebrationContext();
+  useEffect(() => {
+    updateCelebration(bodaData);
+  }, []);
+
   return (
-    <CptWrapper>
-      <div>
-        {/* Cada botón cambia el tema cuando se hace clic */}
-        <button onClick={() => changeTheme("Clasic")}>Clasic</button>
-        <button onClick={() => changeTheme("Green")}>Green</button>
-        <button onClick={() => changeTheme("Pink")}>Pink</button>
-        <button onClick={() => changeTheme("White")}>White</button>
-      </div>
-      <CptContainer type="full" background="picture">
-        <CptTranslucentLayer color="secondary" glass="lower">
-          <PPCelebrantsPresentation />
-        </CptTranslucentLayer>
-      </CptContainer>
-      <CptContainer type="margin" background="alternative">
-        <CptPadding>
-          <LblCelebrantsInvitationMessage />
-        </CptPadding>
-      </CptContainer>
-      <CptContainer type="card" background="picture">
-        <PPSaveTheDate />
-      </CptContainer>
-      <CptContainer type="card" background="alternative">
-        <PPCelebrantsLongMessage />
-      </CptContainer>
-      <CptContainer type="card">
-        <PPVerticalTimeLine />
-      </CptContainer>
-    </CptWrapper>
+    <>
+      <CptLoader />
+      <CptWrapper>
+        <CptContainer type="full" background="pictureH">
+          <CptTranslucentLayer color="secondary" glass="lower">
+            <PPCelebrantsPresentation distribution="right" />
+          </CptTranslucentLayer>
+        </CptContainer>
+        <CptContainer type="margin" background="alternative">
+          <CptPadding>
+            <LblCelebrantsInvitationMessage />
+          </CptPadding>
+        </CptContainer>
+        <CptContainer type="margin" background="pictureH">
+          <CptTranslucentLayer color="secondary" glass="high">
+            <PPSaveTheDate distribution="left" />
+          </CptTranslucentLayer>
+        </CptContainer>
+        <CptContainer type="margin" background="alternative">
+          <PPCelebrantsLongMessage />
+        </CptContainer>
+        <CptContainer type="card">
+          <CptVerticalTimeline />
+        </CptContainer>
+      </CptWrapper>
+    </>
   );
 };
 

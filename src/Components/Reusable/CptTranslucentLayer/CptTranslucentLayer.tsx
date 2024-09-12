@@ -40,7 +40,7 @@ const CptTranslucentLayer: React.FC<ICptTranslucentLayer> = ({
     <Box
       className={className}
       sx={{
-        ...backgroundValues[color],
+        ...(color && backgroundValues[color]),
         ...(glass && blurValues[glass]),
       }}
     >

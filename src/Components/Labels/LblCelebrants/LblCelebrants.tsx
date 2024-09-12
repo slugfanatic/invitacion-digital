@@ -1,7 +1,16 @@
 import { Typography } from "@mui/material";
+import { useCelebrationContext } from "../../../Context/CelebrationContext";
 
 const LblCelebrants: React.FC = () => {
-  return <Typography variant="h1" color="text.primary">Rafaella y Beni</Typography>;
+  const {
+    currentCelebrant: { celebrantsName },
+  } = useCelebrationContext();
+
+  return (
+    <Typography variant="h1" color="text.primary">
+      {celebrantsName}
+    </Typography>
+  );
 };
 
 export default LblCelebrants;

@@ -38,11 +38,6 @@ const ColorPink = createTheme({
       dark: "#c8b89d",
       contrastText: "#000000",
     },
-    text: {
-      primary: "rgba(0, 0, 0, 0.90)", // Texto principal (negro)
-      secondary: "rgba(0, 0, 0, 0.70)", // Texto secundario (gris oscuro)
-      disabled: "rgba(0, 0, 0, 0.50)", // Texto deshabilitado (gris más claro)
-    },
   },
 });
 

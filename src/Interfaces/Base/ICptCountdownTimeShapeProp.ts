@@ -1,5 +1,7 @@
+import { ShapeType } from "../../Types/types";
+
 interface ICptCountdownTimeShapeProp {
-  shape: "circle" | "square";
+  shape: ShapeType;
 }
 
 export default ICptCountdownTimeShapeProp;
