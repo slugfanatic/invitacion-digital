@@ -22,6 +22,9 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
           <li>
             <Link to="/invitacion-digital/clasic">Página Clásica</Link>
           </li>
+          <li>
+            <Link to="/invitacion-digital/clasic">Página Clásica2</Link>
+          </li>
         </ul>
       </nav>
 
