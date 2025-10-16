@@ -20,7 +20,7 @@ const Wedding: React.FC = () => {
   const { updateCelebration } = useCelebrationContext();
   useEffect(() => {
     updateCelebration(bodaData);
-  }, []);
+  });
 
   return (
     <>

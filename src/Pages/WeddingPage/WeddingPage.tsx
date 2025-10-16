@@ -6,7 +6,6 @@ import { Button, Stack, useMediaQuery } from "@mui/material";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import "./WeddingPage.scss";
 import {
-  CptVerticalTimeline,
   CptWrapper,
   IconMapper,
 } from "../../Components/Reusable";
