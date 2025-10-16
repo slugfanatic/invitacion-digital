@@ -22,7 +22,7 @@ const Wedding: React.FC = () => {
 
   useEffect(() => {
     updateCelebration(tresAniosData);
-  }, []);
+  });
 
   return (
     <>

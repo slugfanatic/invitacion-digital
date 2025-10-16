@@ -11,16 +11,16 @@ export const ConfigurationWrapper: React.FC<IChildrenProp> = ({ children }) => {
       <nav>
         <ul>
           <li>
-            <Link to="/invitacion-digital/">Inicio</Link>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
-            <Link to="/invitacion-digital/AngieyJulio">Boda</Link>
+            <Link to="/AngieyJulio">Boda</Link>
           </li>
           <li>
-            <Link to="/invitacion-digital/wedding">Página de Boda</Link>
+            <Link to="/wedding">Página de Boda</Link>
           </li>
           <li>
-            <Link to="/invitacion-digital/clasic">Página Clásica</Link>
+            <Link to="/clasic">Página Clásica</Link>
           </li>
         </ul>
       </nav>

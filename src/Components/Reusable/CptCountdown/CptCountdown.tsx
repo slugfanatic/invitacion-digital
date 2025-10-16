@@ -17,10 +17,10 @@ const CptCountdown: React.FC<ICptCountdown> = ({
   const { days, hours, minutes, seconds } = useCountdown(celebrationDate);
 
   let countdownUnits = [
-    { value: days, label: "Days" },
-    { value: hours, label: "Hours" },
-    { value: minutes, label: "Minutes" },
-    { value: seconds, label: "Seconds" },
+    { value: days, label: "Dias" },
+    { value: hours, label: "Horas" },
+    { value: minutes, label: "Minutos" },
+    { value: seconds, label: "Segundos" },
   ];
 
   const isCountdownActive = () =>

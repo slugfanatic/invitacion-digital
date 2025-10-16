@@ -16,6 +16,7 @@ export type BackgroundFillType =
   | "color"
   | "alternative"
   | "pictureH"
+  | "pictureH2"
   | "pictureV"
   | "pictureB";
 
@@ -46,7 +47,7 @@ export type ThemeContextType = {
   themeNames: string[];
 };
 
-export type CelebrationType = "¡Nos Casamos!" | "Mis Tres Años";
+export type CelebrationType = "¡Nos Casamos!" | "Mis Tres Años" | "Mis XV Años";
 
 export type UrlType = string;
 
@@ -59,6 +60,7 @@ export type CelebrationInformationType = {
   longMessage: string;
   celebrationDate: Date;
   imageH: UrlType;
+  imageH2: UrlType;
   imageV: UrlType;
   imageB: UrlType;
   events: ITimeLineEvent[];

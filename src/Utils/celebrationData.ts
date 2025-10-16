@@ -134,3 +134,75 @@ export const tresAniosData = {
     },
   ],
 } as CelebrationInformationType;
+
+export const quinceAniosData = {
+  wax: "gold",
+  celebrantsName: "Paola",
+  celebrationType: "Mis XV Años",
+  invitationMessage:
+    "Es un honor para mí y mi familia invitarte a ser parte de uno de los días más especiales de mi vida.<br />" +
+    "La celebración de mis quince años.",
+  longMessage:
+    "Existen momentos en la vida que imaginamos, soñamos y esperamos.<br />" +
+    "Uno de esos momentos a llegado, Mis Quince Años y deseó compartirlo con las personas que siempre han estado para mí, ¡Tu eres una de ellas!<br />" +
+    "Mis papás y padrinos<br />" +
+    "Te invitamos<br />" +
+    "A celebrar mi fiesta de XV Años.",
+  celebrationDate: new Date("2025-11-15 15:00:00"),
+  imageV: require("../assets/images/Paola/portada.jpg"),
+  imageH: require("../assets/images/Paola/1.jpg"),
+  imageH2: require("../assets/images/Paola/2.jpg"),
+  imageB: require("../assets/images/nubesycielo.jpg"),
+  events: [
+    {
+      dateOrTime: "13:00 - 14:00 AM",
+      title: "Ceremonia Religiosa",
+      description: "Parroquia de San Joaquín, Tomatlán",
+      iconType: "church",
+    },
+    {
+      dateOrTime: "15:00",
+      title: "Recepción",
+      description: "Salón de eventos Xiuhtec, Zacatlán",
+      iconType: "milestone",
+    },
+    {
+      dateOrTime: "16:00 - 18:00 PM",
+      title: "Hora de Comer",
+      description: "",
+      iconType: "lunch",
+    },
+    {
+      dateOrTime: "18:00 - 22:00 PM",
+      title: "Show",
+      description: "",
+      iconType: "festival",
+    },
+    {
+      dateOrTime: "23:00 - 23:30 PM",
+      title: "Partir el Pastel",
+      description: "",
+      iconType: "cake",
+    },
+    {
+      dateOrTime: "",
+      title: "Despedida",
+      description: "",
+      iconType: "darkMode",
+    },
+  ],
+  imageGallery: [
+    {
+      url: require("../assets/images/Paola/4.jpg"),
+    },
+    {
+      url: require("../assets/images/Paola/5.jpg"),
+    },
+    {
+      url: require("../assets/images/Paola/6.jpg"),
+    },
+    {
+      url: require("../assets/images/Paola/7.jpg"),
+    },
+  ],
+} as CelebrationInformationType;
