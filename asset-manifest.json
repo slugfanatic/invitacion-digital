@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/invitacion-digital/static/css/main.2b9f15dd.css",
-    "main.js": "/invitacion-digital/static/js/main.c4cd9731.js",
+    "main.js": "/invitacion-digital/static/js/main.eb1bec42.js",
     "static/js/453.1e2eb5f2.chunk.js": "/invitacion-digital/static/js/453.1e2eb5f2.chunk.js",
     "static/css/218.c5e2214b.chunk.css": "/invitacion-digital/static/css/218.c5e2214b.chunk.css",
     "static/js/218.387e0e75.chunk.js": "/invitacion-digital/static/js/218.387e0e75.chunk.js",
@@ -43,7 +43,7 @@
     "static/media/Sofia-Regular.otf": "/invitacion-digital/static/media/Sofia-Regular.e2dee251fd62f4f4bc0b.otf",
     "index.html": "/invitacion-digital/index.html",
     "main.2b9f15dd.css.map": "/invitacion-digital/static/css/main.2b9f15dd.css.map",
-    "main.c4cd9731.js.map": "/invitacion-digital/static/js/main.c4cd9731.js.map",
+    "main.eb1bec42.js.map": "/invitacion-digital/static/js/main.eb1bec42.js.map",
     "453.1e2eb5f2.chunk.js.map": "/invitacion-digital/static/js/453.1e2eb5f2.chunk.js.map",
     "218.c5e2214b.chunk.css.map": "/invitacion-digital/static/css/218.c5e2214b.chunk.css.map",
     "218.387e0e75.chunk.js.map": "/invitacion-digital/static/js/218.387e0e75.chunk.js.map",
@@ -61,6 +61,6 @@
   },
   "entrypoints": [
     "static/css/main.2b9f15dd.css",
-    "static/js/main.c4cd9731.js"
+    "static/js/main.eb1bec42.js"
   ]
 }
