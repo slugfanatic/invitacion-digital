@@ -152,7 +152,7 @@ export const quinceAniosData = {
   imageV: require("../assets/images/Paola/portada.jpg"),
   imageH: require("../assets/images/Paola/1.jpg"),
   imageH2: require("../assets/images/Paola/2.jpg"),
-  imageB: require("../assets/images/nubesycielo.jpg"),
+  imageB: require("../assets/images/Paola/invitacion_itinerario.jpg"),
   events: [
     {
       dateOrTime: "13:00 - 14:00 AM",
@@ -164,23 +164,23 @@ export const quinceAniosData = {
       dateOrTime: "15:00",
       title: "Recepción",
       description: "Salón de eventos Xiuhtec, Zacatlán",
-      iconType: "milestone",
+      iconType: "locationCity",
     },
     {
       dateOrTime: "16:00 - 18:00 PM",
-      title: "Hora de Comer",
+      title: "Comida",
       description: "",
-      iconType: "lunch",
+      iconType: "brunchDining",
     },
     {
       dateOrTime: "18:00 - 22:00 PM",
-      title: "Show",
+      title: "Show y Baile",
       description: "",
-      iconType: "festival",
+      iconType: "theaterComedy",
     },
     {
       dateOrTime: "23:00 - 23:30 PM",
-      title: "Partir el Pastel",
+      title: "Corte del Pastel",
       description: "",
       iconType: "cake",
     },

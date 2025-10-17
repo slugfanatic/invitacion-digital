@@ -45,7 +45,7 @@ const CptContainer: React.FC<ICptContainer> = ({
       backgroundImage: `url(${imageB})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "bottom center",
+      backgroundPosition: "top center",
     },
   };
 

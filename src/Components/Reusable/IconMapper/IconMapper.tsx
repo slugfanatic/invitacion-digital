@@ -20,6 +20,9 @@ const IconMapper = (iconName: string): React.ReactElement => {
     soccer: Icons.SportsSoccer,
     attractions: Icons.Attractions,
     emoji: Icons.EmojiEmotions,
+    brunchDining: Icons.BrunchDining,
+    theaterComedy: Icons.TheaterComedy,
+    locationCity: Icons.LocationCity,
   };
 
   if (!iconMap[iconName]) {

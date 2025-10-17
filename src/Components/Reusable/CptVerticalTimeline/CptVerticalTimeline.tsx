@@ -14,7 +14,7 @@ import { useCelebrationContext } from "../../../Context/CelebrationContext";
 import ICptVerticalTimeline from "../../../Interfaces/Components/ICptVerticalTimeline";
 
 const CptVerticalTimeline: React.FC<ICptVerticalTimeline> = ({
-  position = "alternate",
+  position = "right",
 }) => {
   const {
     currentCelebrant: { events },

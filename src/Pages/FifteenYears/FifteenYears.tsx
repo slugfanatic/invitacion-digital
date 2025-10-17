@@ -28,37 +28,36 @@ const FifteenYears: React.FC = () => {
   return (
     <>
       <CptLoader />
-      <CptWrapper>
-        <CptContainer type="full" background="pictureH">
-          <CptTranslucentLayer glass="lower">
-            <PPCelebrantsPresentation />
-          </CptTranslucentLayer>
-        </CptContainer>
-        <CptContainer type="margin" background="pictureB">
-          <CptTranslucentLayer color="secondary" glass="high">
-            <CptPadding>
-              <LblCelebrantsInvitationMessage />
-            </CptPadding>
-          </CptTranslucentLayer>
-        </CptContainer>
-        <CptContainer type="card" background="pictureH2">
-          <CptTranslucentLayer color="secondary">
-            <PPSaveTheDate distribution="right" />
-          </CptTranslucentLayer>
-        </CptContainer>
-        <CptContainer type="margin" background="pictureB">
-          <CptTranslucentLayer color="primary" glass="medium">
-            <PPCelebrantsLongMessage />
-          </CptTranslucentLayer>
-        </CptContainer>
-        <CptContainer type="margin" background="color">
-          <CptGallery />
-        </CptContainer>
-        <CptContainer type="card" background="pictureB">
-          <CptVerticalTimeline />
-        </CptContainer>
-        <CptBackgroundMusic />
-      </CptWrapper>
+
+      <CptContainer type="full" background="pictureH">
+        <CptTranslucentLayer glass="lower">
+          <PPCelebrantsPresentation />
+        </CptTranslucentLayer>
+      </CptContainer>
+      <CptContainer type="margin" background="pictureB">
+        <CptTranslucentLayer color="secondary" glass="high">
+          <CptPadding>
+            <LblCelebrantsInvitationMessage />
+          </CptPadding>
+        </CptTranslucentLayer>
+      </CptContainer>
+      <CptContainer type="card" background="pictureH2">
+        <CptTranslucentLayer color="secondary">
+          <PPSaveTheDate distribution="right" />
+        </CptTranslucentLayer>
+      </CptContainer>
+      <CptContainer type="margin" background="pictureB">
+        <CptTranslucentLayer color="primary" glass="medium">
+          <PPCelebrantsLongMessage />
+        </CptTranslucentLayer>
+      </CptContainer>
+      <CptContainer type="margin" background="color">
+        <CptGallery />
+      </CptContainer>
+      <CptContainer type="card" background="pictureB">
+        <CptVerticalTimeline />
+      </CptContainer>
+      <CptBackgroundMusic />
     </>
   );
 };
