@@ -1,3 +1,4 @@
+export { default as CptBackgroundMusic } from "./CptBackgroundMusic/CptBackgroundMusic";
 export { default as CptContainer } from "./CptContainer/CptContainer";
 export { default as CptCountdown } from "./CptCountdown/CptCountdown";
 export { default as CptCountdownTimeItem } from "./CptCountdownTimeItem/CptCountdownTimeItem";

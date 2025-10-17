@@ -33,15 +33,16 @@ export const WeddingHashRoutes: React.FC = () => {
           path="/"
           element={
             <Suspense fallback={WaveLoader()}>
-              <ThreeYears />
+              <FifteenYears />
             </Suspense>
+            
           }
         />
         <Route
-          path="/Paola"
+          path="/ThreeYears"
           element={
             <Suspense fallback={WaveLoader()}>
-              <FifteenYears />
+              <ThreeYears />
             </Suspense>
           }
         />

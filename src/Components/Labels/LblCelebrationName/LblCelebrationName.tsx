@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import { useCelebrationContext } from "../../../Context/CelebrationContext";
+import { CelebrationLabels } from "../../../Types/types";
 
 const LblCelebrationName: React.FC = () => {
   const {
@@ -7,8 +8,8 @@ const LblCelebrationName: React.FC = () => {
   } = useCelebrationContext();
 
   return (
-    <Typography variant="h2" color="text.secondary">
-      {type}
+    <Typography variant="h1" color="text.secondary">
+      {CelebrationLabels[type]}
     </Typography>
   );
 };

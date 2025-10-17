@@ -35,6 +35,30 @@ const PPCelebrantsLongMessage: React.FC = () => {
               <CptTranslucentLayer color="primary">
                 <CptPadding innerRef={elementRef} pSize="big">
                   <LblLongMessage />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                 </CptPadding>
               </CptTranslucentLayer>
             </CptContainer>

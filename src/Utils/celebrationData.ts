@@ -3,7 +3,7 @@ import { CelebrationInformationType } from "../Types/types";
 export const bodaData = {
   wax: "redW",
   celebrantsName: "Angie y Julio",
-  celebrationType: "¡Nos Casamos!",
+  celebrationType: "wedding",
   invitationMessage:
     "Con gran alegría, les invitamos a celebrar nuestra unión matrimonial.",
   longMessage:
@@ -58,7 +58,7 @@ export const bodaData = {
 export const tresAniosData = {
   wax: "gold",
   celebrantsName: "Rafaella",
-  celebrationType: "Mis Tres Años",
+  celebrationType: "third_birthday",
   invitationMessage:
     "¡Estamos emocionados de invitarlos a la fiesta de cumpleaños de nuestra pequeña Rafaella! Va a cumplir 3 años y queremos celebrarlo en grande.<br />" +
     "Habrá música, juegos y muchas sorpresas más. Además, no te pierdas nuestra deliciosa comida y pastel.",
@@ -138,16 +138,16 @@ export const tresAniosData = {
 export const quinceAniosData = {
   wax: "gold",
   celebrantsName: "Paola",
-  celebrationType: "Mis XV Años",
+  celebrationType: "fifteenth_birthday",
   invitationMessage:
     "Es un honor para mí y mi familia invitarte a ser parte de uno de los días más especiales de mi vida.<br />" +
     "La celebración de mis quince años.",
   longMessage:
     "Existen momentos en la vida que imaginamos, soñamos y esperamos.<br />" +
-    "Uno de esos momentos a llegado, Mis Quince Años y deseó compartirlo con las personas que siempre han estado para mí, ¡Tu eres una de ellas!<br />" +
+    "Uno de esos momentos ha llegado, Mis Quince Años y deseó compartirlo con las personas que siempre han estado para mí, ¡Tu eres una de ellas!<br />" +
     "Mis papás y padrinos<br />" +
-    "Te invitamos<br />" +
-    "A celebrar mi fiesta de XV Años.",
+    "te invitamos<br />" +
+    "a celebrar mi fiesta de XV Años",
   celebrationDate: new Date("2025-11-15 15:00:00"),
   imageV: require("../assets/images/Paola/portada.jpg"),
   imageH: require("../assets/images/Paola/1.jpg"),

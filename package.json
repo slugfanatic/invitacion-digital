@@ -2,7 +2,7 @@
   "name": "invitacion-digital",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://slugfanatic.github.io/invitacion-digital",
+  "homepage": "http://invites.com.mx", 
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@emotion/react": "^11.11.4",

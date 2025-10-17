@@ -47,7 +47,12 @@ export type ThemeContextType = {
   themeNames: string[];
 };
 
-export type CelebrationType = "¡Nos Casamos!" | "Mis Tres Años" | "Mis XV Años";
+export type CelebrationType = "wedding" | "third_birthday" | "fifteenth_birthday";
+export const CelebrationLabels: Record<CelebrationType, string> = {
+  wedding: "¡Nos Casamos!",
+  third_birthday: "Mis Tres Años", 
+  fifteenth_birthday: "Mis XV Años"
+};
 
 export type UrlType = string;
 
