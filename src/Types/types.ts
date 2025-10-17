@@ -69,7 +69,7 @@ export type CelebrationInformationType = {
   imageV: UrlType;
   imageB: UrlType;
   events: ITimeLineEvent[];
-  imageGallery?: IImageGallery[];
+  imageGallery: IImageGallery[];
   wax?: WaxType;
 };
 
