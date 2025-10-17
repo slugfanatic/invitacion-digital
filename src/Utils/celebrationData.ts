@@ -155,31 +155,31 @@ export const quinceAniosData = {
   imageB: require("../assets/images/Paola/invitacion_itinerario.jpg"),
   events: [
     {
-      dateOrTime: "13:00 - 14:00 AM",
+      dateOrTime: "1:00 PM",
       title: "Ceremonia Religiosa",
       description: "Parroquia de San Joaquín, Tomatlán",
       iconType: "church",
     },
     {
-      dateOrTime: "15:00",
+      dateOrTime: "3:00 PM",
       title: "Recepción",
       description: "Salón de eventos Xiuhtec, Zacatlán",
       iconType: "locationCity",
     },
     {
-      dateOrTime: "16:00 - 18:00 PM",
+      dateOrTime: "4:00 PM",
       title: "Comida",
       description: "",
       iconType: "brunchDining",
     },
     {
-      dateOrTime: "18:00 - 22:00 PM",
+      dateOrTime: "6:00 PM",
       title: "Show y Baile",
       description: "",
       iconType: "theaterComedy",
     },
     {
-      dateOrTime: "23:00 - 23:30 PM",
+      dateOrTime: "10:30 PM",
       title: "Corte del Pastel",
       description: "",
       iconType: "cake",
